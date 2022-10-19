@@ -76,13 +76,6 @@ namespace database
 
             //sqlitecom.ExecuteNonQuery();
 
-            //будь-шо
-            //наприклад ось це
-            //або оце
-            //нєєє напевно це 
-            //бомба
-
-
             SQLiteCommand sqlitecom;
             sqlitecom = sqcon.CreateCommand();
             Random rnd = new Random();
