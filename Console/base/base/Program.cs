@@ -80,7 +80,6 @@ namespace database
             Random rnd = new Random();
             int user_res = rnd.Next(1, 100);
             int bomb_score = rnd.Next(1, 100);
-            int total = user_res + bomb_score;
             int id = rnd.Next(1, 5000);
             sqlitecom.CommandText = "INSERT INTO UserScores(Id, name, result) VALUES ('" + id + "' , '" + CreateUser(7) + "', '" + user_res + "' )";
             sqlitecom.ExecuteNonQuery();
@@ -88,8 +87,6 @@ namespace database
             sqlitecom.CommandText = "INSERT INTO Bombs(Id, score) VALUES ('" + id + "', '" + bomb_score + "' )";
             sqlitecom.ExecuteNonQuery();
 
-            sqlitecom.CommandText = "INSERT INTO BestPlayers(Id, total) VALUES ('" + id + "', '" + total + "' )";
-            sqlitecom.ExecuteNonQuery();
         }
         static void ReadData(SQLiteConnection sqcon)
         {
