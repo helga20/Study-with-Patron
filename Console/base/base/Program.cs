@@ -76,6 +76,7 @@ namespace database
             //sqlitecom.ExecuteNonQuery();
             
             //Вийшло?
+            //так:)
 
             SQLiteCommand sqlitecom;
             sqlitecom = sqcon.CreateCommand();
