@@ -40,3 +40,11 @@ E:\C# програмування\Console_Base\base\base\obj\Debug\net6.0\refint\
 E:\C# програмування\Console_Base\base\base\obj\Debug\net6.0\base.pdb
 E:\C# програмування\Console_Base\base\base\obj\Debug\net6.0\base.genruntimeconfig.cache
 E:\C# програмування\Console_Base\base\base\obj\Debug\net6.0\ref\base.dll
+C:\Users\Admin\Source\Repos\Study-with-Patron\Console\base\base\obj\Debug\net6.0\base.csproj.AssemblyReference.cache
+C:\Users\Admin\Source\Repos\Study-with-Patron\Console\base\base\obj\Debug\net6.0\base.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Source\Repos\Study-with-Patron\Console\base\base\obj\Debug\net6.0\base.AssemblyInfoInputs.cache
+C:\Users\Admin\Source\Repos\Study-with-Patron\Console\base\base\obj\Debug\net6.0\base.AssemblyInfo.cs
+C:\Users\Admin\Source\Repos\Study-with-Patron\Console\base\base\obj\Debug\net6.0\base.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\Study-with-Patron\Console\base\base\obj\Debug\net6.0\base.dll
+C:\Users\Admin\Source\Repos\Study-with-Patron\Console\base\base\obj\Debug\net6.0\refint\base.dll
+C:\Users\Admin\Source\Repos\Study-with-Patron\Console\base\base\obj\Debug\net6.0\base.pdb

@@ -74,6 +74,8 @@ namespace database
             //sqlitecom.CommandText = " DROP Table 'Bombs'";
 
             //sqlitecom.ExecuteNonQuery();
+            
+            //Вийшло?
 
             SQLiteCommand sqlitecom;
             sqlitecom = sqcon.CreateCommand();
@@ -113,7 +115,7 @@ namespace database
                 Console.WriteLine($"{sqliteread2.GetInt32(0)} {sqliteread2.GetInt32(1)}");
             }
 
-          "SELECT UserScores,SUM(result) total from ( select UserScores,number from cash_table union all select region,number from cheque_table ) t group by region"
+            "SELECT UserScores,SUM(result) total from ( select UserScores,number from cash_table union all select region,number from cheque_table ) t group by region"
 
 
             SQLiteDataReader sqliteread3;
