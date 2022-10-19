@@ -79,6 +79,7 @@ namespace database
             //будь-шо
             //наприклад ось це
             //або оце
+            //нєєє напевно це 
 
             SQLiteCommand sqlitecom;
             sqlitecom = sqcon.CreateCommand();
