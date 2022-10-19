@@ -113,10 +113,13 @@ namespace database
                 Console.WriteLine($"{sqliteread2.GetInt32(0)} {sqliteread2.GetInt32(1)}");
             }
 
+          "SELECT UserScores,SUM(result) total from ( select UserScores,number from cash_table union all select region,number from cheque_table ) t group by region"
+
+
             SQLiteDataReader sqliteread3;
             SQLiteCommand sqlitecom3;
             sqlitecom = sqcon.CreateCommand();
-            sqlitecom.CommandText = "SELECT * FROM BestPlayers";
+            sqlitecom.CommandText = "SELECT * FROM UserScores, Bombs";
             sqliteread3 = sqlitecom.ExecuteReader();
             Console.WriteLine($"{sqliteread3.GetName(0),-3} {sqliteread3.GetName(1),-8}");
             while (sqliteread3.Read())
