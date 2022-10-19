@@ -70,7 +70,6 @@ namespace database
             //SQLiteCommand sqlitecom;
             //sqlitecom = sqcon.CreateCommand();
 
-            //sqlitecom.CommandText = " DROP Table 'BestPlayers'";
             //sqlitecom.CommandText = " DROP Table 'UserScores'";
             //sqlitecom.CommandText = " DROP Table 'Bombs'";
 
