@@ -77,6 +77,7 @@ namespace database
             //sqlitecom.ExecuteNonQuery();
 
             //будь-шо
+            //наприклад ось це
 
 
             SQLiteCommand sqlitecom;
