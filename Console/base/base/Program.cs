@@ -46,19 +46,12 @@ namespace database
             string CreateBombs = "CREATE TABLE IF NOT EXISTS Bombs (Id INTEGER PRIMARY KEY NOT NULL, " +
                 "score INTEGER NOT NULL, FOREIGN KEY (Id) REFERENCES UserScores (Id) ON DELETE CASCADE);";
 
-            string CreateBestPlayers = "CREATE TABLE IF NOT EXISTS BestPlayers (Id INTEGER PRIMARY KEY NOT NULL, " +
-                "total INTEGER NOT NULL, FOREIGN KEY (Id) REFERENCES UserScores (Id) ON DELETE CASCADE, " +
-                "FOREIGN KEY (Id) REFERENCES Bombs (Id) ON DELETE CASCADE);";
-
             sqlitecom = sqcon.CreateCommand();
 
             sqlitecom.CommandText = CreateUserScores;
             sqlitecom.ExecuteNonQuery();
 
             sqlitecom.CommandText = CreateBombs;
-            sqlitecom.ExecuteNonQuery();
-
-            sqlitecom.CommandText = CreateBestPlayers;
             sqlitecom.ExecuteNonQuery();
         }
         static string CreateUser(int length)
