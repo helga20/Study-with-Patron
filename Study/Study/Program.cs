@@ -84,6 +84,7 @@ namespace database
             sqlitecom.CommandText = " DROP Table 'UserScores'";
             sqlitecom.CommandText = " DROP Table 'Bombs'";
             sqlitecom.ExecuteNonQuery();
+            --
          */
             
             SQLiteCommand sqlitecom;
