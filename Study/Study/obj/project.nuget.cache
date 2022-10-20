@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Qt2jfJBDqXH4fi2fGgsKu02+3ut0tndz1baHkil6PcCidAziPOL/qe60bMvq2CRPCpSnuK8ea2XfKk2k+2wKww==",
+  "dgSpecHash": "wlJu7rS5Mg38ttzfKDw7cwIxLTfXWPfOG3V3JaJIsv0xn4ppVLZ6HAVLsnsGmVYBL+/Ffre1w+wad7hhGERAdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Назар\\Source\\Repos\\Study-with-Patron\\Study\\Study\\Study.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Source\\Repos\\Study-with-Patron\\Study\\Study\\Study.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Назар\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
-    "C:\\Users\\Назар\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.116\\stub.system.data.sqlite.core.netstandard.1.0.116.nupkg.sha512",
-    "C:\\Users\\Назар\\.nuget\\packages\\system.data.sqlite.core\\1.0.116\\system.data.sqlite.core.1.0.116.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.116\\stub.system.data.sqlite.core.netstandard.1.0.116.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.data.sqlite.core\\1.0.116\\system.data.sqlite.core.1.0.116.nupkg.sha512"
   ],
   "logs": []
 }
