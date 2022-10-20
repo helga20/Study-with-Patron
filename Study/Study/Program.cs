@@ -30,6 +30,7 @@ namespace database
             ReadData(connection);
             
         }
+
         static SQLiteConnection CreateConnection()
         {
             SQLiteConnection connection;
@@ -38,6 +39,7 @@ namespace database
             catch (Exception e) { Console.WriteLine(e.Message); }
             return connection;
         }
+
         static void CreateTables(SQLiteConnection sqcon)
         {
             SQLiteCommand sqlitecom;
@@ -53,6 +55,7 @@ namespace database
             sqlitecom.CommandText = DataBaseProperties.CreateView;
             sqlitecom.ExecuteNonQuery();
         }
+
         static void CreateView(SQLiteConnection sqcon)
         {
             SQLiteCommand sqlitecom;
@@ -60,6 +63,7 @@ namespace database
             sqlitecom.CommandText = DataBaseProperties.CreateView;
             sqlitecom.ExecuteNonQuery();
         }
+
         static string CreateUser(int length)
         {
             const string valid = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
@@ -71,15 +75,14 @@ namespace database
             }
             return res.ToString();
         }
+
         static void InsertData(SQLiteConnection sqcon)
         {
          /*
             SQLiteCommand sqlitecom;
             sqlitecom = sqcon.CreateCommand();
-
             sqlitecom.CommandText = " DROP Table 'UserScores'";
             sqlitecom.CommandText = " DROP Table 'Bombs'";
-
             sqlitecom.ExecuteNonQuery();
          */
             
@@ -96,6 +99,7 @@ namespace database
             sqlitecom.ExecuteNonQuery();
            
         }
+
         static void ReadData(SQLiteConnection sqcon)
         {
             SQLiteDataReader sqliteread;
