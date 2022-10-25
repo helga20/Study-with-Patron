@@ -1,0 +1,54 @@
+D:\Навчання\Study\Study\bin\Debug\net6.0\Study.exe
+D:\Навчання\Study\Study\bin\Debug\net6.0\Study.deps.json
+D:\Навчання\Study\Study\bin\Debug\net6.0\Study.runtimeconfig.json
+D:\Навчання\Study\Study\bin\Debug\net6.0\Study.dll
+D:\Навчання\Study\Study\bin\Debug\net6.0\Study.pdb
+D:\Навчання\Study\Study\bin\Debug\net6.0\System.Data.SQLite.dll
+D:\Навчання\Study\Study\bin\Debug\net6.0\runtimes\linux-x64\native\libsqlite3.so
+D:\Навчання\Study\Study\bin\Debug\net6.0\runtimes\osx-x64\native\libsqlite3.dylib
+D:\Навчання\Study\Study\bin\Debug\net6.0\runtimes\win7-x64\native\sqlite3.dll
+D:\Навчання\Study\Study\bin\Debug\net6.0\runtimes\win7-x86\native\sqlite3.dll
+D:\Навчання\Study\Study\bin\Debug\net6.0\runtimes\linux-x64\native\SQLite.Interop.dll
+D:\Навчання\Study\Study\bin\Debug\net6.0\runtimes\osx-x64\native\SQLite.Interop.dll
+D:\Навчання\Study\Study\bin\Debug\net6.0\runtimes\win-x64\native\SQLite.Interop.dll
+D:\Навчання\Study\Study\bin\Debug\net6.0\runtimes\win-x86\native\SQLite.Interop.dll
+D:\Навчання\Study\Study\obj\Debug\net6.0\Study.csproj.AssemblyReference.cache
+D:\Навчання\Study\Study\obj\Debug\net6.0\Study.GeneratedMSBuildEditorConfig.editorconfig
+D:\Навчання\Study\Study\obj\Debug\net6.0\Study.AssemblyInfoInputs.cache
+D:\Навчання\Study\Study\obj\Debug\net6.0\Study.AssemblyInfo.cs
+D:\Навчання\Study\Study\obj\Debug\net6.0\Study.csproj.CoreCompileInputs.cache
+D:\Навчання\Study\Study\obj\Debug\net6.0\Study.csproj.CopyComplete
+D:\Навчання\Study\Study\obj\Debug\net6.0\Study.dll
+D:\Навчання\Study\Study\obj\Debug\net6.0\refint\Study.dll
+D:\Навчання\Study\Study\obj\Debug\net6.0\Study.pdb
+D:\Навчання\Study\Study\obj\Debug\net6.0\Study.genruntimeconfig.cache
+D:\Навчання\Study\Study\obj\Debug\net6.0\ref\Study.dll
+D:\Навчання\Study\Study\obj\Debug\net6.0\Study.Properties.DataBaseProperties.resources
+D:\Навчання\Study\Study\obj\Debug\net6.0\Study.csproj.GenerateResource.cache
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\bin\Debug\net6.0\Study.exe
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\bin\Debug\net6.0\Study.deps.json
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\bin\Debug\net6.0\Study.runtimeconfig.json
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\bin\Debug\net6.0\Study.dll
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\bin\Debug\net6.0\Study.pdb
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\bin\Debug\net6.0\System.Data.SQLite.dll
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\bin\Debug\net6.0\runtimes\linux-x64\native\libsqlite3.so
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\bin\Debug\net6.0\runtimes\osx-x64\native\libsqlite3.dylib
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\bin\Debug\net6.0\runtimes\win7-x64\native\sqlite3.dll
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\bin\Debug\net6.0\runtimes\win7-x86\native\sqlite3.dll
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\bin\Debug\net6.0\runtimes\linux-x64\native\SQLite.Interop.dll
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\bin\Debug\net6.0\runtimes\osx-x64\native\SQLite.Interop.dll
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\bin\Debug\net6.0\runtimes\win-x64\native\SQLite.Interop.dll
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\bin\Debug\net6.0\runtimes\win-x86\native\SQLite.Interop.dll
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\obj\Debug\net6.0\Study.csproj.AssemblyReference.cache
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\obj\Debug\net6.0\Study.Properties.DataBaseProperties.resources
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\obj\Debug\net6.0\Study.csproj.GenerateResource.cache
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\obj\Debug\net6.0\Study.GeneratedMSBuildEditorConfig.editorconfig
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\obj\Debug\net6.0\Study.AssemblyInfoInputs.cache
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\obj\Debug\net6.0\Study.AssemblyInfo.cs
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\obj\Debug\net6.0\Study.csproj.CoreCompileInputs.cache
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\obj\Debug\net6.0\Study.csproj.CopyComplete
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\obj\Debug\net6.0\Study.dll
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\obj\Debug\net6.0\refint\Study.dll
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\obj\Debug\net6.0\Study.pdb
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\obj\Debug\net6.0\Study.genruntimeconfig.cache
+D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\obj\Debug\net6.0\ref\Study.dll
