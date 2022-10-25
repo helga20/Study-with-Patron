@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Назар\\source\\repos\\Study-with-Patron\\Study\\DAL\\BLL.csproj": {}
+    "C:\\Users\\Назар\\Source\\Repos\\Study-with-Patron\\Study\\Study\\BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Назар\\source\\repos\\Study-with-Patron\\Study\\DAL\\BLL.csproj": {
+    "C:\\Users\\Назар\\Source\\Repos\\Study-with-Patron\\Study\\Study\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Назар\\source\\repos\\Study-with-Patron\\Study\\DAL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\Назар\\Source\\Repos\\Study-with-Patron\\Study\\Study\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\Назар\\source\\repos\\Study-with-Patron\\Study\\DAL\\BLL.csproj",
+        "projectPath": "C:\\Users\\Назар\\Source\\Repos\\Study-with-Patron\\Study\\Study\\BLL.csproj",
         "packagesPath": "C:\\Users\\Назар\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Назар\\source\\repos\\Study-with-Patron\\Study\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\Назар\\Source\\Repos\\Study-with-Patron\\Study\\Study\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -23,15 +23,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0-windows7.0": {
-            "targetAlias": "net6.0-windows",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -42,8 +42,18 @@
         }
       },
       "frameworks": {
-        "net6.0-windows7.0": {
-          "targetAlias": "net6.0-windows",
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.116, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,9 +68,6 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
-              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"

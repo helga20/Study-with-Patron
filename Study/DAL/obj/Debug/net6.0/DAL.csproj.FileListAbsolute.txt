@@ -25,3 +25,6 @@ C:\Users\Назар\Source\Repos\Study-with-Patron\Study\Study\obj\Debug\net6.0\
 C:\Users\Назар\Source\Repos\Study-with-Patron\Study\Study\obj\Debug\net6.0\DAL.pdb
 C:\Users\Назар\Source\Repos\Study-with-Patron\Study\Study\obj\Debug\net6.0\DAL.genruntimeconfig.cache
 C:\Users\Назар\Source\Repos\Study-with-Patron\Study\Study\obj\Debug\net6.0\ref\DAL.dll
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\BLL\obj\Debug\net6.0\DAL.dll
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\BLL\obj\Debug\net6.0\refint\DAL.dll
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\BLL\obj\Debug\net6.0\DAL.pdb

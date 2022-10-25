@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NjAaijTEVcpvvbwaz+ZTOEPGWT70CxtmSqDjqP0jM5FIeMbcL0mWIW/iUuK2DoO4d96d8Qa6J8P+7KozhG6gRg==",
+  "dgSpecHash": "AhA5n4YyPJRJxVHaEl5RRLJhJ0338YUrYwSAIGqxnDLVytwZtY8jIPOdKZiUXSTYsP/uKfRqm6GF8yIxBwZN+A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Назар\\Source\\Repos\\Study-with-Patron\\Study\\Study\\DAL.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Назар\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
-    "C:\\Users\\Назар\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.116\\stub.system.data.sqlite.core.netstandard.1.0.116.nupkg.sha512",
-    "C:\\Users\\Назар\\.nuget\\packages\\system.data.sqlite.core\\1.0.116\\system.data.sqlite.core.1.0.116.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\DAL\\BLL.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
