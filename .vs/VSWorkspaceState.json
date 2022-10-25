@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Study",
+    "\\Study\\Study"
   ],
+  "SelectedNode": "\\Study\\Study\\DAL.csproj",
   "PreviewInSolutionExplorer": false
 }
