@@ -52,3 +52,30 @@ D:\Навчання\5 семестр\Програмна інженерія\Пр�
 D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\obj\Debug\net6.0\Study.pdb
 D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\obj\Debug\net6.0\Study.genruntimeconfig.cache
 D:\Навчання\5 семестр\Програмна інженерія\Практичні\Проєкт\Study\Study\obj\Debug\net6.0\ref\Study.dll
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\bin\Debug\net6.0\Study.exe
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\bin\Debug\net6.0\Study.deps.json
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\bin\Debug\net6.0\Study.runtimeconfig.json
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\bin\Debug\net6.0\Study.dll
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\bin\Debug\net6.0\Study.pdb
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\bin\Debug\net6.0\System.Data.SQLite.dll
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\bin\Debug\net6.0\runtimes\linux-x64\native\libsqlite3.so
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\bin\Debug\net6.0\runtimes\osx-x64\native\libsqlite3.dylib
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\bin\Debug\net6.0\runtimes\win7-x64\native\sqlite3.dll
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\bin\Debug\net6.0\runtimes\win7-x86\native\sqlite3.dll
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\bin\Debug\net6.0\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\bin\Debug\net6.0\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\bin\Debug\net6.0\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\bin\Debug\net6.0\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\obj\Debug\net6.0\Study.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\obj\Debug\net6.0\Study.Properties.DataBaseProperties.resources
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\obj\Debug\net6.0\Study.csproj.GenerateResource.cache
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\obj\Debug\net6.0\Study.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\obj\Debug\net6.0\Study.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\obj\Debug\net6.0\Study.AssemblyInfo.cs
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\obj\Debug\net6.0\Study.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\obj\Debug\net6.0\Study.csproj.CopyComplete
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\obj\Debug\net6.0\Study.dll
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\obj\Debug\net6.0\refint\Study.dll
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\obj\Debug\net6.0\Study.pdb
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\obj\Debug\net6.0\Study.genruntimeconfig.cache
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\Study\obj\Debug\net6.0\ref\Study.dll
