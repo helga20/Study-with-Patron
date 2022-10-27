@@ -27,7 +27,7 @@ namespace database
                 InsertData(connection);
             }
             CreateView(connection);
-            ReadData(connection);        
+           // ReadData(connection);        
         }
 
         static SQLiteConnection CreateConnection()
