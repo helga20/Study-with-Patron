@@ -55,12 +55,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AdditionSubtractionWindow.xaml.cs">
+      <DependentUpon>AdditionSubtractionWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainMenuWindow.xaml.cs">
       <DependentUpon>MainMenuWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="StartWindow.xaml.cs">
       <DependentUpon>StartWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="AdditionSubtractionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainMenuWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -116,6 +123,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="154a53e4133c60ecf6c2da5f7c291672.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pes ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
