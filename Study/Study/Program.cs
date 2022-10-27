@@ -95,8 +95,7 @@ namespace database
             sqlitecom.ExecuteNonQuery();
 
             sqlitecom.CommandText = "INSERT INTO Bombs(Id, score) VALUES ('" + id + "', '" + bomb_score + "' )";
-            sqlitecom.ExecuteNonQuery();
-           
+            sqlitecom.ExecuteNonQuery();       
         }
 
         static void ReadData(SQLiteConnection sqcon)
