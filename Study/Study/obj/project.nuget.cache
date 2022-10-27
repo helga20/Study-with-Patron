@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "dT5tr+NbrxDS2oNwN7hru3orTk0iMvY8ZZnW7WDVS33/prLWPf9GMGIVBZXENpYbLvPB1xwGaU4Oe+lZ6dd4XQ==",
+  "dgSpecHash": "56ymExliQn27d971YMyR2EK91lF8PUu0VlLOJWirtXqDrFWF3uk/cw1d2KVnzRQTwLPD4OUfowxojMlXE3mbtw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\пмо-31\\проєкт\\Нова папка\\Study-with-Patron\\Study\\Study\\Study.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Lenovo\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.116\\stub.system.data.sqlite.core.netstandard.1.0.116.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\system.data.sqlite.core\\1.0.116\\system.data.sqlite.core.1.0.116.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.116\\stub.system.data.sqlite.core.netstandard.1.0.116.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.data.sqlite.core\\1.0.116\\system.data.sqlite.core.1.0.116.nupkg.sha512"
   ],
   "logs": []
 }

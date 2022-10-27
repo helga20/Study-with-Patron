@@ -1,0 +1,18 @@
+﻿<Window x:Class="WPF.MainMenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="MainMenuWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Навчання з Патроном (1).png"/>
+        </Grid.Background>
+        <Button x:Name="sum_and_diff" Content="Додавання і віднімання " HorizontalAlignment="Left" Height="66" Margin="70,151,0,0" VerticalAlignment="Top" Width="170" FontStretch="Medium" Foreground="#FF08185B" BorderBrush="#FFFF9412" Background="#FFFEFF69" BorderThickness="2,2,2,2" FontFamily="Monotype Corsiva" FontSize="16" FontWeight="Bold"/>
+        <Button x:Name="mul_and_div" Content="Множення і ділення " HorizontalAlignment="Center" Height="66" Margin="0,151,0,0" VerticalAlignment="Top" Width="170" FontStretch="Medium" Foreground="#FF08185B" BorderBrush="#FFFF9412" Background="#FFFEFF69" BorderThickness="2,2,2,2" FontFamily="Monotype Corsiva" FontSize="16" FontWeight="Bold"/>
+        <Button x:Name="saper" Content="Гра 'Сапер'" HorizontalAlignment="Left" Height="66" Margin="554,151,0,0" VerticalAlignment="Top" Width="170" FontStretch="Medium" Foreground="#FF08185B" BorderBrush="#FFFF9412" Background="#FFFEFF69" BorderThickness="2,2,2,2" FontFamily="Monotype Corsiva" FontSize="16" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="184" Margin="537,240,0,0" VerticalAlignment="Top" Width="363" Source="/154a53e4133c60ecf6c2da5f7c291672.png"/>
+    </Grid>
+</Window>
