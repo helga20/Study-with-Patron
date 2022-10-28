@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\WPF\obj\Release\
+C:\Users\User\Source\Repos\Study-with-Patron\Study\WPF\obj\Release\
 WPF
 none
 false
 TRACE
-C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\Study\WPF\App.xaml
-2-269550713
+C:\Users\User\Source\Repos\Study-with-Patron\Study\WPF\App.xaml
+5-384413536
 
-6979816047
+91045258026
 13-1310406943
-MainWindow.xaml;StartWindow.xaml;
+AdditionSubtractionWindow.xaml;MainMenuWindow.xaml;MainWindow.xaml;MultiplicationDivisionWindow.xaml;StartWindow.xaml;
 
 True
 
