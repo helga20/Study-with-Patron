@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\source\\repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj": {}
+    "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\source\\repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj": {
+    "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj",
         "projectName": "Study",
-        "projectPath": "C:\\Users\\Lenovo\\source\\repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\Study\\obj\\",
         "projectStyle": "PackageReference",
