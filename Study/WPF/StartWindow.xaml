@@ -15,7 +15,7 @@
             <ImageBrush ImageSource="/Навчання з Патроном (1).png"/>
         </Grid.Background>
         <Button x:Name="start_button" Content="Почати гру" HorizontalAlignment="Left" Margin="514,169,0,0" VerticalAlignment="Top" Height="83" Width="238" Click="Start_button_Click" IsDefault="True" RenderTransformOrigin="0.714,1.871" Background="#FFFFF2A0" BorderBrush="#FFBD770F" BorderThickness="2,2,2,2" Command="{Binding Cursor, ElementName=start_button}" Foreground="#FF1F1103" FontFamily="Gill Sans Ultra Bold" FontSize="36" FontWeight="Bold"/>
-        <Button x:Name="exit_button" Content="Вийти" HorizontalAlignment="Left" Margin="684,387,0,0" VerticalAlignment="Top" Height="37" Width="99"  Click="Exit_button_Click" IsDefault="True" RenderTransformOrigin="0.714,1.871" Background="#FFBFF6DE" BorderBrush="#FF2B1702" BorderThickness="1,2,1,2" Command="{Binding Cursor, ElementName=start_button}" Foreground="#FF1F1103" FontFamily="Gill Sans Ultra Bold" FontSize="22"/>
+        <Button x:Name="exit_button" Content="Вийти" HorizontalAlignment="Left" Margin="684,387,0,10" Width="99"  Click="Exit_button_Click" IsDefault="True" RenderTransformOrigin="0.714,1.871" Background="#FFBFF6DE" BorderBrush="#FF2B1702" BorderThickness="1,2,1,2" Command="{Binding Cursor, ElementName=start_button}" Foreground="#FF1F1103" FontFamily="Gill Sans Ultra Bold" FontSize="22"/>
         <Image HorizontalAlignment="Left" Height="355" Margin="42,0,0,0" VerticalAlignment="Center" Width="408" Source="/40c8096665a10a5adba37837593a2f49-removebg.png"/>
     </Grid>
 </Window>

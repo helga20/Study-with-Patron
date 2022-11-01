@@ -12,8 +12,8 @@
                 <ImageBrush ImageSource="/Навчання з Патроном (1).png"/>
             </Grid.Background>
             <Button x:Name="one" Content="1" HorizontalAlignment="Left" Height="42" Margin="313,156,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click" BorderBrush="Black" Background="#FFFFF2A0" FontFamily="Bernard MT Condensed" FontSize="20"/>
-            <Button x:Name="check" Content="Перевірити" HorizontalAlignment="Left" Height="46" Margin="613,275,0,0" VerticalAlignment="Top" Width="148" Background="#FFBFF6DE" FontFamily="Gill Sans Ultra Bold" Foreground="#FF1F1103" FontSize="16" BorderBrush="#FF2B1702"/>
-            <Button x:Name="next_level" Content="Наступний рівень" HorizontalAlignment="Left" Height="47" Margin="613,340,0,0" VerticalAlignment="Top" Width="148" Background="#FFBFF1E1" Foreground="#FF1F1103" BorderBrush="#FF2B1702" FontFamily="Gill Sans Ultra Bold" FontSize="14"/>
+            <Button x:Name="check" Content="Перевірити" HorizontalAlignment="Left" Height="46" Margin="613,275,0,0" VerticalAlignment="Top" Width="148" Background="#FFBFF6DE" FontFamily="Gill Sans Ultra Bold" Foreground="#FF1F1103" FontSize="16" BorderBrush="#FF2B1702" Click="check_Click"/>
+            <Button x:Name="next_level" Content="Наступний рівень" HorizontalAlignment="Left" Height="47" Margin="613,340,0,0" VerticalAlignment="Top" Width="148" Background="#FFBFF1E1" Foreground="#FF1F1103" BorderBrush="#FF2B1702" FontFamily="Gill Sans Ultra Bold" FontSize="14" Click="next_level_Click"/>
             <Label x:Name="score" Content="Рахунок: " HorizontalAlignment="Left" Height="30" Margin="640,20,0,0" VerticalAlignment="Top" Width="94" Foreground="#FF1F1103" FontFamily="Gill Sans Ultra Bold" FontSize="14"/>
             <Image HorizontalAlignment="Left" Height="203" Margin="24,166,0,0" VerticalAlignment="Top" Width="221"/>
             <Image Margin="10,145,561,19" Source="/Pes ok.png" Stretch="Fill"/>
@@ -42,7 +42,7 @@
                     </Button.Background>
                 </Button>
             </ToolBar>
-            <Button x:Name="clear" Content="Очистити" HorizontalAlignment="Left" Margin="530,74,0,0" VerticalAlignment="Top" Height="30" Width="72" Background="#FFFFF2A0" IsCancel="True" BorderBrush="#FFBD770F" FontFamily="Gill Sans Ultra Bold" Foreground="#FF1F1103"/>
+            <Button x:Name="clear" Content="Очистити" HorizontalAlignment="Left" Margin="530,74,0,0" VerticalAlignment="Top" Height="30" Width="72" Background="#FFFFF2A0" IsCancel="True" BorderBrush="#FFBD770F" FontFamily="Gill Sans Ultra Bold" Foreground="#FF1F1103" Click="clear_Click"/>
         </Grid>
     </Grid>
 </Window>

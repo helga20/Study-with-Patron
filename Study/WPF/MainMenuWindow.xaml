@@ -10,9 +10,9 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Навчання з Патроном (1).png"/>
         </Grid.Background>
-        <Button x:Name="sum_and_diff" Content="Додавання і віднімання " HorizontalAlignment="Center" Height="80" Margin="0,58,0,0" VerticalAlignment="Top" Width="208" FontStretch="Medium" Foreground="#FF1F1103" BorderBrush="#FFBD770F" Background="#FFFFF2A0" BorderThickness="2,2,2,2" FontFamily="Gill Sans Ultra Bold" FontSize="16" FontWeight="Bold"/>
-        <Button x:Name="mul_and_div" Content="Множення і ділення " HorizontalAlignment="Center" Height="80" VerticalAlignment="Top" Width="208" FontStretch="Medium" Foreground="#FF1F1103" BorderBrush="#FFBD770F" Background="#FFFFF2A0" BorderThickness="2,2,2,2" FontFamily="Gill Sans Ultra Bold" FontSize="18" FontWeight="Bold" Margin="0,171,0,0"/>
-        <Button x:Name="saper" Content="Гра 'Сапер'" Height="80" Margin="296,286,296,0" VerticalAlignment="Top" FontStretch="Medium" Foreground="#FF1F1103" BorderBrush="#FFBD770F" Background="#FFFFF2A0" BorderThickness="2,2,2,2" FontFamily="Gill Sans Ultra Bold" FontSize="20" FontWeight="Bold" Width="208"/>
+        <Button x:Name="sum_and_diff" Content="Додавання і віднімання " HorizontalAlignment="Center" Height="80" Margin="0,58,0,0" VerticalAlignment="Top" Width="208" FontStretch="Medium" Foreground="#FF1F1103" BorderBrush="#FFBD770F" Background="#FFFFF2A0" BorderThickness="2,2,2,2" FontFamily="Gill Sans Ultra Bold" FontSize="16" FontWeight="Bold" Click="sum_and_diff_Click"/>
+        <Button x:Name="mul_and_div" Content="Множення і ділення " HorizontalAlignment="Center" Height="80" VerticalAlignment="Top" Width="208" FontStretch="Medium" Foreground="#FF1F1103" BorderBrush="#FFBD770F" Background="#FFFFF2A0" BorderThickness="2,2,2,2" FontFamily="Gill Sans Ultra Bold" FontSize="18" FontWeight="Bold" Margin="0,171,0,0" Click="mul_and_div_Click"/>
+        <Button x:Name="saper" Content="Гра 'Сапер'" Height="80" Margin="296,286,296,0" VerticalAlignment="Top" FontStretch="Medium" Foreground="#FF1F1103" BorderBrush="#FFBD770F" Background="#FFFFF2A0" BorderThickness="2,2,2,2" FontFamily="Gill Sans Ultra Bold" FontSize="20" FontWeight="Bold" Width="208" Click="saper_Click"/>
         <Image HorizontalAlignment="Left" Height="184" Margin="536,10,0,0" VerticalAlignment="Top" Width="363" Source="/154a53e4133c60ecf6c2da5f7c291672.png"/>
         <ToolBar HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top" Width="88">
             <ToolBar.Background>

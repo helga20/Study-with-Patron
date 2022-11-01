@@ -23,5 +23,25 @@ namespace WPF
         {
             InitializeComponent();
         }
+
+        private void exit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void sum_and_diff_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void mul_and_div_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void saper_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

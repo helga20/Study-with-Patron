@@ -24,5 +24,29 @@ namespace WPF
             InitializeComponent();
         }
 
+        private void exit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void clear_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void check_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void next_level_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
