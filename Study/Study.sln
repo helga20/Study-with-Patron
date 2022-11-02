@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study", "Study\Study.csproj", "{4A8863E4-204E-45BA-BFB5-C60DB5A72D2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DALDataBase", "Study\DALDataBase.csproj", "{4A8863E4-204E-45BA-BFB5-C60DB5A72D2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF", "WPF\WPF.csproj", "{BF90AB6B-AB64-4E02-8F19-A8B934D13E5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFPres", "WPF\WPFPres.csproj", "{BF90AB6B-AB64-4E02-8F19-A8B934D13E5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "DAL\BLL.csproj", "{A2739449-AFF7-4790-98D6-180E2C88CD2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLLLogProg", "DAL\BLLLogProg.csproj", "{A2739449-AFF7-4790-98D6-180E2C88CD2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

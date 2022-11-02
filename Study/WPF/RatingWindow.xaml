@@ -38,7 +38,7 @@
                        HorizontalAlignment="Center"
                        Grid.ColumnSpan="1"/>
         </Grid>
-        
+
         <Button x:Name="exit_menu" 
                 Grid.Column="1" 
                 Grid.Row="2" 
@@ -111,6 +111,17 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        <TextBlock x:Name="rating" 
+                   Grid.Column="1" 
+                   HorizontalAlignment="Left" 
+                   Margin="225,0,0,0" 
+                   Grid.Row="2" 
+                   TextWrapping="Wrap" 
+                   Text="TextBlock" 
+                   VerticalAlignment="Center" 
+                   Grid.ColumnSpan="2" 
+                   Height="426" 
+                   Width="512"/>
 
 
     </Grid>
