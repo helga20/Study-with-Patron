@@ -137,11 +137,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\source\\Study\\Study\\Study.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj",
       "projectName": "Study",
-      "projectPath": "C:\\Users\\Lenovo\\source\\Study\\Study\\Study.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\source\\Study\\Study\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\Study\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

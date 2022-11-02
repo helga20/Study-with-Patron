@@ -26,7 +26,10 @@ namespace WPF
 
         private void Rating_Click(object sender, RoutedEventArgs e)
         {
-
+            
+            RatingWindow rat_win = new RatingWindow();
+            this.Visibility = Visibility.Hidden;
+            rat_win.Show();
         }
 
         private void Start_Click(object sender, RoutedEventArgs e)
