@@ -10,7 +10,7 @@
         Width="1000"
         WindowStyle="ToolWindow"
         WindowStartupLocation="CenterScreen"
-        Background="#181735">
+        Background="#181735" Loaded="Addition_Load">
 
     <Grid RenderTransformOrigin="0.507,0.513">
         <Grid.RowDefinitions>
@@ -30,6 +30,7 @@
               Grid.RowSpan="2">
 
             <TextBlock Text="Рахунок:" 
+                        Name ="result"
                        Foreground="White"
                        FontSize="25"
                        FontStyle= "Normal"
@@ -37,6 +38,7 @@
                        HorizontalAlignment="Right" 
                        FontWeight="Black"
                        Margin="0,17,132,0"/>
+            <Label Name ="score" Content="" HorizontalAlignment="Left" Height="40" Margin="887,10,0,0" VerticalAlignment="Top" Width="113"/>
         </Grid>
         <Image HorizontalAlignment="Left"
                Height="330" 
@@ -665,7 +667,8 @@
 
         </Button>
         <TextBox HorizontalAlignment="Left" 
-                 Margin="76,0,0,508" 
+                 Name ="result_TextBox"
+                 Margin="72,0,0,530" 
                  TextWrapping="Wrap" 
                  Text="" 
                  VerticalAlignment="Bottom" 
@@ -673,9 +676,44 @@
                  TextAlignment="Center"
                  FontSize="25"
                  Grid.Column="2" 
-                 Height="80" 
+                 Height="56" 
                  Grid.Row="2" 
                  TextChanged="Result_TextBox_TextChanged"/>
+        <Label Name ="number_1" Grid.Column="1" Content="1" HorizontalAlignment="Left" Height="80" Margin="304,26,0,0" Grid.Row="2" VerticalAlignment="Top" Width="46" RenderTransformOrigin="0.81,0.467" Foreground="White"
+                       FontSize="50"
+                       FontStyle= "Normal"
+                       FontWeight="Black">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.062" AngleY="0"/>
+                    <RotateTransform Angle="-0.154"/>
+                    <TranslateTransform X="-0.011" Y="-0.057"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Name ="modul_" Grid.Column="1" Content="+" Height="80" Margin="357,27,483,0" Grid.Row="2" VerticalAlignment="Top" RenderTransformOrigin="-0.224,0.468" Foreground="White"
+                       FontSize="50"
+                       FontStyle= "Normal"
+                       FontWeight="Black" Grid.ColumnSpan="2">
+
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.433" AngleY="0"/>
+                    <RotateTransform Angle="-0.703"/>
+                    <TranslateTransform X="-0.063" Y="0.602"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Name ="number_2" Grid.Column="1" Content="2" HorizontalAlignment="Left" Height="80" Margin="418,26,0,0" Grid.Row="2" VerticalAlignment="Top" Width="105" Foreground="White"
+                       FontSize="50"
+                       FontStyle= "Normal"
+                       FontWeight="Black" Grid.ColumnSpan="2"/>
+        <Label Name ="eq"  Grid.Column="2" Content="=" HorizontalAlignment="Left" Height="80" Margin="10,21,0,0" Grid.Row="2" VerticalAlignment="Top" Width="124" Foreground="White"
+                       FontSize="50"
+                       FontStyle= "Normal"
+                       FontWeight="Black"/>
 
 
     </Grid>
