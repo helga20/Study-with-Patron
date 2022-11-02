@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj": {}
+    "C:\\Users\\Lenovo\\source\\repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj": {
+    "C:\\Users\\Lenovo\\source\\repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj",
         "projectName": "Study",
-        "projectPath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\source\\repos\\helga20\\Study-with-Patron\\Study\\Study\\Study.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\Study\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\source\\repos\\helga20\\Study-with-Patron\\Study\\Study\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -51,6 +51,10 @@
               "version": "[6.4.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[6.0.10, )"
             },

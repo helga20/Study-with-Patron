@@ -27,7 +27,7 @@ namespace database
                 InsertData(connection);
             }
             CreateView(connection);
-           // ReadData(connection);        
+            // ReadData(connection);        
         }
 
         static SQLiteConnection CreateConnection()
@@ -77,14 +77,14 @@ namespace database
 
         static void InsertData(SQLiteConnection sqcon)
         {
-         /*
-            SQLiteCommand sqlitecom;
-            sqlitecom = sqcon.CreateCommand();
-            sqlitecom.CommandText = " DROP Table 'UserScores'";
-            sqlitecom.CommandText = " DROP Table 'Bombs'";
-            sqlitecom.ExecuteNonQuery();
-         */
-            
+            /*
+               SQLiteCommand sqlitecom;
+               sqlitecom = sqcon.CreateCommand();
+               sqlitecom.CommandText = " DROP Table 'UserScores'";
+               sqlitecom.CommandText = " DROP Table 'Bombs'";
+               sqlitecom.ExecuteNonQuery();
+            */
+
             SQLiteCommand sqlitecom;
             sqlitecom = sqcon.CreateCommand();
             Random rnd = new Random();
@@ -95,7 +95,7 @@ namespace database
             sqlitecom.ExecuteNonQuery();
 
             sqlitecom.CommandText = "INSERT INTO Bombs(Id, score) VALUES ('" + id + "', '" + bomb_score + "' )";
-            sqlitecom.ExecuteNonQuery();       
+            sqlitecom.ExecuteNonQuery();
         }
 
         static void ReadData(SQLiteConnection sqcon)

@@ -11,6 +11,7 @@
         WindowStyle="ToolWindow"
         WindowStartupLocation="CenterScreen"
         Background="#181735">
+   
 
     <Grid RenderTransformOrigin="0.507,0.513">
         <Grid.RowDefinitions>
