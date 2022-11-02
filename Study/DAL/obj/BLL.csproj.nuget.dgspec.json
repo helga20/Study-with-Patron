@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\source\\Study\\DAL\\BLL.csproj": {}
+    "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\DAL\\BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\source\\Study\\DAL\\BLL.csproj": {
+    "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\DAL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\source\\Study\\DAL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\DAL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\Lenovo\\source\\Study\\DAL\\BLL.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\DAL\\BLL.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\source\\Study\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\Study\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

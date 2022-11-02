@@ -26,12 +26,14 @@ namespace WPF
 
         private void Exit_Menu_Click(object sender, RoutedEventArgs e)
         {
-
+            Close();
         }
 
         private void Back_Menu_Click(object sender, RoutedEventArgs e)
         {
-
+            RegistrationWindow reg_win = new RegistrationWindow();
+            this.Visibility = Visibility.Hidden;
+            reg_win.Show();
         }
     }
 }

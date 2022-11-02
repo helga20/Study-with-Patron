@@ -145,9 +145,7 @@
   <ItemGroup>
     <Resource Include="Images\sticker.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Fonts\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Images\sticker2.png" />
   </ItemGroup>
