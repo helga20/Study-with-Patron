@@ -1,0 +1,168 @@
+﻿<Window x:Class="WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="Навчання з Патроном" 
+        Height="700" 
+        Width="1000"
+        WindowStyle="ToolWindow"
+        WindowStartupLocation="CenterScreen"
+        Background="#181735">
+    <Grid RenderTransformOrigin="0.507,0.513">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7.802"/>
+            <RowDefinition Height="42.198"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="225*"/>
+            <ColumnDefinition Width="225*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#0F0F2D"
+              Grid.ColumnSpan="3" 
+              Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Навчання з Патроном: грайся та розвивайся!" 
+                       Foreground="White" 
+                       Grid.Column="1"
+                       FontSize="25"
+                       FontStyle="Italic"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Grid.ColumnSpan="1"/>
+        </Grid>
+        <Image HorizontalAlignment="Left"
+               Height="440" 
+               Grid.Row="2" 
+               VerticalAlignment="Center" 
+               Width="430" 
+               Source="Images/154a53e4133c60ecf6c2da5f7c291672.png"
+               Grid.Column="1"/>
+
+        <Button x:Name="start_game" 
+                Grid.Column="2" 
+                Content="Почати гру" 
+                Foreground="Yellow"
+                FontSize="70"     
+                FontWeight="Medium" 
+                VerticalAlignment="Center"
+                Grid.Row="2" 
+                Click="Start_game_Click">
+
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#ff4169e1"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#ff87cefa"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Height="140" 
+                            Width="405"
+                            CornerRadius="40"
+                            Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                                          HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="exit" 
+                Grid.Column="1" 
+                Content="Вийти" 
+                Grid.Row="2" 
+                Foreground="White"
+                FontSize="40"     
+                FontWeight="Medium" 
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Left"
+                Click="Exit_Click">
+
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#39385d"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#3a3952"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Height="70" 
+                            Width="150"
+                            CornerRadius="0"
+                            Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                                          HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Grid
+                Margin="97,-262,-1057,31"
+            Panel.ZIndex="-1" Grid.Column="2" Grid.RowSpan="3">
+            <Grid.RenderTransform>
+                <RotateTransform Angle="50"/>
+            </Grid.RenderTransform>
+            <StackPanel Orientation="Horizontal"
+                        Margin="-350,250,-255,-250">
+                <StackPanel>
+                    <Border Width="700"
+                            Height="35"
+                            Background="#ff008fff"
+                            Margin="150,0,0,0"
+                            CornerRadius="20"/>
+                    <Border Width="700"
+                            Height="35"
+                            Background="Yellow"
+                            Margin="0,15,0,0"
+                            CornerRadius="20"/>
+                    <Border Width="700"
+                            Height="35"
+                            Background="#39385d"
+                            Margin="150,15,0,0"
+                            CornerRadius="20"/>
+                </StackPanel>
+                <StackPanel>
+                    <Border Width="700"
+                            Height="35"
+                            Background="#39385d"
+                            Margin="150,0,0,0"
+                            CornerRadius="20"/>
+                    <Border Width="700"
+                            Height="35"
+                            Background="Yellow"
+                            Margin="0,15,0,0"
+                            CornerRadius="20"/>
+                    <Border Width="700"
+                            Height="35"
+                            Background="#ff008fff"
+                            Margin="150,15,0,0"
+                            CornerRadius="20"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Window>
