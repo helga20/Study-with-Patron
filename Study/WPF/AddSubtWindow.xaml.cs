@@ -37,7 +37,8 @@ namespace WPF
         }
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
-
+            string temp = result_TextBox.Text;
+            result_TextBox.Text = "";
         }
         private void One_Click(object sender, RoutedEventArgs e)
         {
@@ -103,37 +104,44 @@ namespace WPF
             char modul = chars[num];
             return modul;
         }
+
+        private void NextSol()
+        {
+            result_TextBox.Text = "";
+            Random rnd = new Random();
+            int a_1 = rnd.Next(1, max);
+            int b_1 = rnd.Next(1, max);
+            char modul = GetModul();
+            if (a_1 < b_1 && modul == '-')
+            {
+                int temp = a_1;
+                a_1 = b_1;
+                b_1 = temp;
+            }
+            number_1.Content = a_1.ToString();
+            number_2.Content = b_1.ToString();
+            modul_.Content = modul.ToString();
+        }
         private void Check_Click(object sender, RoutedEventArgs e)
         {
             
 
-            next_level.Visibility = Visibility.Visible;
+            
             if (result_TextBox.Text == "")
             {
                 MessageBox.Show("Введи свою відповідь)");
             }
             else
             {
-                string var; var = result_TextBox.Text;
+                string var;
+                var = result_TextBox.Text;
                 int res = Convert.ToInt32(var);
                 int a = Convert.ToInt32(number_1.Content);
                 int b = Convert.ToInt32(number_2.Content);
                 if (res == a + b || res == a - b)
                 {
-                    result_TextBox.Text = "";
-                    Random rnd = new Random();
-                    int a_1 = rnd.Next(1, max);
-                    int b_1 = rnd.Next(1, max);
-                    char modul = GetModul();
-                    if (a_1 < b_1 && modul == '-')
-                    {
-                        int temp = a_1;
-                        a_1 = b;
-                        b_1 = temp;
-                    }
-                    number_1.Content = a_1.ToString();
-                    number_2.Content = modul.ToString();
-                    score.Content = b_1.ToString();
+                    NextSol();
+                    score.Content = counter;
                     counter++;
                     result.Text = "Вдалось - " + counter;
 
@@ -147,6 +155,7 @@ namespace WPF
                         counter = 0;
                     }
                     result.Text = "Вдалось - " + counter;
+                    NextSol();
                 }
                 if (counter >= 15)
                 {
@@ -165,7 +174,9 @@ namespace WPF
 
         private void Next_Level_Click(object sender, RoutedEventArgs e)
         {
-
+            AddSubtWindow add_win = new AddSubtWindow();
+            this.Visibility = Visibility.Hidden;
+            add_win.Show();
         }
 
 
@@ -184,7 +195,7 @@ namespace WPF
         private void Addition_Load(object sender, RoutedEventArgs e)
         {
             max = 10;
-          
+            next_level.Visibility = Visibility.Collapsed;
             Random rnd = new Random();
             int a = rnd.Next(1, max);
             int b = rnd.Next(1, max);

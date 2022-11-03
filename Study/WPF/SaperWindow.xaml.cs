@@ -133,7 +133,7 @@ namespace WPF
 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
-            Timer_set();
+            //Timer_set();
             start.Visibility = Visibility.Collapsed;
             max = 10;
             Random rnd = new Random();
@@ -155,7 +155,7 @@ namespace WPF
 
         private void NextSol()
         {
-            Timer_set();
+            //Timer_set();
             result_TextBox.Text = "";
             Random rnd = new Random();
             int a_1 = rnd.Next(1, max);

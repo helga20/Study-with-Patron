@@ -679,7 +679,7 @@
                  Height="56" 
                  Grid.Row="2" 
                  TextChanged="Result_TextBox_TextChanged"/>
-        <Label Name ="number_1" Grid.Column="1" Content="1" HorizontalAlignment="Left" Height="80" Margin="304,26,0,0" Grid.Row="2" VerticalAlignment="Top" Width="46" RenderTransformOrigin="0.81,0.467" Foreground="White"
+        <Label Name ="number_1" Grid.Column="1" Content="1" HorizontalAlignment="Left" Height="80" Margin="265,26,0,0" Grid.Row="2" VerticalAlignment="Top" Width="64" RenderTransformOrigin="0.81,0.467" Foreground="White"
                        FontSize="50"
                        FontStyle= "Normal"
                        FontWeight="Black">
