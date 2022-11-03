@@ -189,7 +189,7 @@ namespace WPF
             else if (heart1.Visibility == Visibility.Visible)
             {
                 heart1.Visibility = Visibility.Collapsed;
-                MessageBox.Show("Game OVER");
+                MessageBox.Show("Не залишилося спроб. Гра завершена");
                 MenuWindow m_win = new MenuWindow();
                 this.Visibility = Visibility.Hidden;
                 m_win.Show();
@@ -219,7 +219,7 @@ namespace WPF
                 }
                 else
                 {
-                    MessageBox.Show("Обережно ти відповів неправильно");
+                    MessageBox.Show("Обережно, ти відповів неправильно");
                     Check_Hearts();
                     counter--;
                     if (counter < 0)
