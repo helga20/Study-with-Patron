@@ -31,14 +31,14 @@ namespace WPF
         private void Timer_set()
         {
             System.Windows.Threading.DispatcherTimer dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
-            dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
+            dispatcherTimer.Tick += new EventHandler(DispatcherTimer_Tick);
             dispatcherTimer.Interval = new TimeSpan(0, 0, 20);
             dispatcherTimer.Start();
             DateTime startTime;
             startTime = DateTime.Now;
             dispatcherTimer.Tick += (s, ev) => { time_TextBox.Text = String.Format("{0:00}", (DateTime.Now - startTime).Seconds); };
         }
-        private void dispatcherTimer_Tick(object sender, EventArgs e)
+        private void DispatcherTimer_Tick(object sender, EventArgs e)
         {
             MessageBox.Show("Слідкуй за часом");
             Check_Hearts();
