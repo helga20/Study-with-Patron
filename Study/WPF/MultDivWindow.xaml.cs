@@ -150,7 +150,6 @@ namespace WPF
                 if (res == a * b || res == a / b)
                 {
                     NextSol();
-                    score.Content = counter;
                     counter++;
                     result.Text = "Вдалось - " + counter;
 

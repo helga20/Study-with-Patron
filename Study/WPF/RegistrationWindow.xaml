@@ -238,7 +238,7 @@
                  TextWrapping="Wrap" 
                  Text="" 
                  TextAlignment="Center"
-                 FontSize="25"
+                 FontSize="30"
                  VerticalAlignment="Top" 
                  Width="340" 
                  Height="50"/>

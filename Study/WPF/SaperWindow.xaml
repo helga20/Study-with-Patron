@@ -735,10 +735,20 @@
                  Height="80" 
                  Grid.Row="2" 
                  TextChanged="Result_TextBox_TextChanged"/>
-        <Label x:Name ="number_1" Grid.Column="1" Content="1" HorizontalAlignment="Left" Height="80" Margin="293,25,0,0" Grid.Row="2" VerticalAlignment="Top" Width="85" RenderTransformOrigin="0.536,0.545" Foreground="White"
-            FontSize="50"
-            FontStyle= "Normal"
-            FontWeight="Black">
+        <Label x:Name ="number_1" 
+               Grid.Column="1" 
+               Content="1" 
+               HorizontalAlignment="Left" 
+               Height="80" 
+               Margin="265,26,0,0" 
+               Grid.Row="2" 
+               VerticalAlignment="Top" 
+               Width="85" 
+               RenderTransformOrigin="0.536,0.545" 
+               Foreground="White"
+               FontSize="50"
+               FontStyle= "Normal"
+               FontWeight="Black">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -748,12 +758,21 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label x:Name ="modul_" Grid.Column="1" Content="+" Height="80" Margin="370,27,79,0" Grid.Row="2" VerticalAlignment="Top" RenderTransformOrigin="-0.224,0.468" Foreground="White"
-            FontSize="50"
-            FontStyle= "Normal"
-            FontWeight="Black">
+        <Label x:Name ="modul_" 
+               Grid.Column="1" 
+               Content="+" 
+               Height="80" 
+               Margin="357,26,483,0" 
+               VerticalAlignment="Top" 
+               RenderTransformOrigin="-0.224,0.468" 
+               Foreground="White"
+               FontSize="50"
+               FontStyle= "Normal"
+               FontWeight="Black"
+               Grid.Row="2" 
+               Grid.ColumnSpan="2">
 
-            <Label.RenderTransform>
+                <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform AngleX="0.433" AngleY="0"/>
@@ -762,14 +781,33 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label x:Name ="number_2" Grid.Column="1" Content="2" HorizontalAlignment="Left" Height="80" Margin="418,26,0,0" Grid.Row="2" VerticalAlignment="Top" Width="105" Foreground="White"
-            FontSize="50"
-            FontStyle= "Normal"
-            FontWeight="Black" Grid.ColumnSpan="2"/>
-        <Label x:Name ="eq"  Grid.Column="2" Content="=" HorizontalAlignment="Left" Height="80" Margin="10,21,0,0" Grid.Row="2" VerticalAlignment="Top" Width="124" Foreground="White"
-            FontSize="50"
-            FontStyle= "Normal"
-            FontWeight="Black"/>
+        <Label x:Name ="number_2" 
+               Grid.Column="1" 
+               Content="2" 
+               HorizontalAlignment="Left" 
+               Height="80" 
+               Margin="418,26,0,0" 
+               Grid.Row="2" 
+               VerticalAlignment="Top" 
+               Width="105" 
+               Foreground="White"
+               FontSize="50"
+               FontStyle= "Normal"
+               FontWeight="Black" 
+               Grid.ColumnSpan="2"/>
+        <Label x:Name ="eq"  
+               Grid.Column="2" 
+               Content="=" 
+               HorizontalAlignment="Left" 
+               Height="80" 
+               Margin="10,26,0,0" 
+               Grid.Row="2" 
+               VerticalAlignment="Top" 
+               Width="124" 
+               Foreground="White"
+               FontSize="50"
+               FontStyle= "Normal"
+               FontWeight="Black"/>
 
     </Grid>
 </Window>
