@@ -28,24 +28,6 @@
               Grid.ColumnSpan="3" 
               Grid.RowSpan="2">
 
-            <TextBlock Text="Рахунок:" 
-                       Foreground="White"
-                       FontSize="25"
-                       FontStyle= "Normal"
-                       VerticalAlignment="Top"
-                       HorizontalAlignment="Right" 
-                       FontWeight="Black"
-                       Margin="0,17,132,0"/>
-
-            <TextBlock Text="Час:" 
-                       Foreground="White"
-                       FontSize="25"
-                       FontStyle= "Normal"
-                       VerticalAlignment="Top"
-                       HorizontalAlignment="Center" 
-                       FontWeight="Black"
-                       Margin="0,17,132,0"/>
-
             <Label 
                Content="♥" 
                Name="heart1"
@@ -81,6 +63,36 @@
             Width="50" 
             IsEnabled="False" 
             Foreground="#FFDE1253"/>
+            <Label 
+            Content="Рахунок:" 
+            x:Name="score"
+            Foreground="White"
+            FontSize="25"
+            FontStyle= "Normal"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Right" 
+            FontWeight="Black"
+            Margin="0,7,132,0"/>
+            <Label 
+                Content="Час:" 
+                x:Name="time"
+                Foreground="White"
+                FontSize="25"
+                FontStyle= "Normal"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Right" 
+                FontWeight="Black"
+                Margin="0,7,500,0"/>
+            <TextBox x:Name="time_TextBox" HorizontalAlignment="Left" 
+                Margin="505,0,0,0" 
+                TextWrapping="Wrap" 
+                Text="" 
+                VerticalAlignment="Bottom" 
+                Width="179" 
+                TextAlignment="Center"
+                FontSize="25" 
+                Height="43" 
+                TextChanged="time_TextBox_TextChanged" RenderTransformOrigin="0.512,0.508"/>
 
 
 
@@ -711,7 +723,7 @@
             </Button.Template>
 
         </Button>
-        <TextBox HorizontalAlignment="Left" 
+        <TextBox x:Name="result_TextBox" HorizontalAlignment="Left" 
                  Margin="76,0,0,508" 
                  TextWrapping="Wrap" 
                  Text="" 
@@ -723,6 +735,41 @@
                  Height="80" 
                  Grid.Row="2" 
                  TextChanged="Result_TextBox_TextChanged"/>
+        <Label x:Name ="number_1" Grid.Column="1" Content="1" HorizontalAlignment="Left" Height="80" Margin="304,26,0,0" Grid.Row="2" VerticalAlignment="Top" Width="46" RenderTransformOrigin="0.81,0.467" Foreground="White"
+            FontSize="50"
+            FontStyle= "Normal"
+            FontWeight="Black">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.062" AngleY="0"/>
+                    <RotateTransform Angle="-0.154"/>
+                    <TranslateTransform X="-0.011" Y="-0.057"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name ="modul_" Grid.Column="1" Content="+" Height="80" Margin="357,27,483,0" Grid.Row="2" VerticalAlignment="Top" RenderTransformOrigin="-0.224,0.468" Foreground="White"
+            FontSize="50"
+            FontStyle= "Normal"
+            FontWeight="Black" Grid.ColumnSpan="2">
+
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.433" AngleY="0"/>
+                    <RotateTransform Angle="-0.703"/>
+                    <TranslateTransform X="-0.063" Y="0.602"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name ="number_2" Grid.Column="1" Content="2" HorizontalAlignment="Left" Height="80" Margin="418,26,0,0" Grid.Row="2" VerticalAlignment="Top" Width="105" Foreground="White"
+            FontSize="50"
+            FontStyle= "Normal"
+            FontWeight="Black" Grid.ColumnSpan="2"/>
+        <Label x:Name ="eq"  Grid.Column="2" Content="=" HorizontalAlignment="Left" Height="80" Margin="10,21,0,0" Grid.Row="2" VerticalAlignment="Top" Width="124" Foreground="White"
+            FontSize="50"
+            FontStyle= "Normal"
+            FontWeight="Black"/>
 
     </Grid>
 </Window>
