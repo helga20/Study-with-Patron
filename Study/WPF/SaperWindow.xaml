@@ -83,7 +83,8 @@
                 HorizontalAlignment="Right" 
                 FontWeight="Black"
                 Margin="0,7,500,0"/>
-            <TextBox x:Name="time_TextBox" HorizontalAlignment="Left" 
+            <TextBox x:Name="time_TextBox" 
+                HorizontalAlignment="Left" 
                 Margin="505,0,0,0" 
                 TextWrapping="Wrap" 
                 Text="" 
@@ -92,7 +93,8 @@
                 TextAlignment="Center"
                 FontSize="25" 
                 Height="43" 
-                TextChanged="time_TextBox_TextChanged" RenderTransformOrigin="0.512,0.508"/>
+                TextChanged="Time_TextBox_TextChanged" 
+                RenderTransformOrigin="0.512,0.508"/>
 
 
 

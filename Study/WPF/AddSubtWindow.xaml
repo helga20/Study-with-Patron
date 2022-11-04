@@ -566,7 +566,8 @@
             Grid.Row="2" 
             Click="Check_Click" 
             Margin="217,372,0,0" 
-                RenderTransformOrigin="1.607,0.563">
+            RenderTransformOrigin="1.607,0.563" 
+            KeyDown="Check_keydown">
 
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
@@ -678,7 +679,14 @@
                  Grid.Column="2" 
                  Height="80" 
                  Grid.Row="2" 
-                 TextChanged="Result_TextBox_TextChanged"/>
+                 TextChanged="Result_TextBox_TextChanged"
+                 >
+        <TextBox.InputBindings>
+                <KeyBinding Command="ApplicationCommands.Paste" 
+                            Key="Enter" />
+            </TextBox.InputBindings>
+        </TextBox>
+
         <Label Name ="number_1" 
                Grid.Column="1" 
                Content="1" 

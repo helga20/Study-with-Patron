@@ -239,9 +239,11 @@
                  Text="" 
                  TextAlignment="Center"
                  FontSize="30"
+                 Name="nickname_textbox"
                  VerticalAlignment="Top" 
                  Width="340" 
-                 Height="50"/>
+                 Height="50" 
+                 TextChanged="TextBox_TextChanged"/>
 
 
     </Grid>

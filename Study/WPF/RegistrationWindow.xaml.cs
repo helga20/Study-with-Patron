@@ -33,9 +33,16 @@ namespace WPF
 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
-            SaperWindow sap_win = new SaperWindow();
-            this.Visibility = Visibility.Hidden;
-            sap_win.Show();
+            if (String.IsNullOrEmpty(nickname_textbox.Text))
+            {
+                MessageBox.Show("Псевдонім не введено.\nПовторіть спробу");
+            }
+            else
+            {
+                SaperWindow sap_win = new SaperWindow();
+                this.Visibility = Visibility.Hidden;
+                sap_win.Show();
+            }
         }
 
         private void Exit_Menu_Click(object sender, RoutedEventArgs e)
@@ -48,6 +55,11 @@ namespace WPF
             MenuWindow menu_win = new MenuWindow();
             this.Visibility = Visibility.Hidden;
             menu_win.Show();
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

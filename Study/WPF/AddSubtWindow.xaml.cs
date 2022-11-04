@@ -124,9 +124,7 @@ namespace WPF
         }
         private void Check_Click(object sender, RoutedEventArgs e)
         {
-            
 
-            
             if (result_TextBox.Text == "")
             {
                 MessageBox.Show("Введи свою відповідь)");
@@ -209,6 +207,19 @@ namespace WPF
             
             modul_.Content = modul.ToString();
             number_2.Content = b.ToString();
+        }
+
+        private void Check_keydown(object sender, KeyEventArgs e)
+        {
+            //if (e.Key == Key.Enter)
+            //{
+
+            //}
+            //if (e.Key == System.Windows.Input.Key.Enter)
+            //{
+            //    e.Handled = true;
+            //    MessageBox.Show("Enter Key is pressed!");
+            //}
         }
     }
 }

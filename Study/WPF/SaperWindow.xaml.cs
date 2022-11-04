@@ -256,7 +256,7 @@ namespace WPF
             Close();
         }
 
-        private void time_TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Time_TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
