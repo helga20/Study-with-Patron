@@ -1,0 +1,269 @@
+﻿<Window x:Class="StudyWithPatron.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudyWithPatron"
+       mc:Ignorable="d"
+        Title="Меню" 
+        Height="700" 
+        Width="1000"
+        WindowStyle="ToolWindow"
+        WindowStartupLocation="CenterScreen"
+        Background="#181735">
+    <Grid RenderTransformOrigin="0.507,0.513">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7.802"/>
+            <RowDefinition Height="42.198"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="225*"/>
+            <ColumnDefinition Width="225*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#0F0F2D"
+              Grid.ColumnSpan="3" 
+              Grid.RowSpan="2">
+
+            <TextBlock Text="Режими гри" 
+                       Foreground="White" 
+                       Grid.Column="1"
+                       FontSize="25"
+                       FontStyle= "Normal"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Grid.ColumnSpan="1"/>
+        </Grid>
+       
+
+        <Button x:Name="sum_diff" 
+                Grid.Column="1" 
+                Content="Додавання і віднімання" 
+                Foreground="Yellow"
+                FontSize="35"     
+                FontWeight="Medium" 
+                VerticalAlignment="Top"
+                Grid.Row="2" 
+                Click="Sum_Diff_Click" 
+                Grid.ColumnSpan="2" 
+                HorizontalAlignment="Left" 
+                Margin="289,78,0,0">
+
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#ff4169e1"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#ff87cefa"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Height="140" 
+                            Width="405"
+                            CornerRadius="40"
+                            Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                                          HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="mul_div" 
+                Grid.Column="1" 
+                Content="Множення і ділення" 
+                Foreground="Yellow"
+                FontSize="35"     
+                FontWeight="Medium" 
+                VerticalAlignment="Center"
+                Grid.Row="2" 
+                Click="Mul_Div_Click" 
+                Grid.ColumnSpan="2"
+                HorizontalAlignment="Left"
+                Margin="289,0,0,0">
+
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#ff4169e1"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#ff87cefa"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Height="140" 
+                            Width="405"
+                            CornerRadius="40"
+                            Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                                          HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="saper" 
+                Grid.Column="1" 
+                Content='Гра "Сапер"' 
+                Foreground="Yellow"
+                FontSize="40"     
+                FontWeight="Medium" 
+                VerticalAlignment="Bottom"
+                Grid.Row="2" 
+                Click="Saper_Click" 
+                Grid.ColumnSpan="2" 
+                HorizontalAlignment="Left" 
+                Margin="289,0,0,80">
+
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#ff4169e1"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#ff87cefa"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Height="140" 
+                            Width="405"
+                            CornerRadius="40"
+                            Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                                          HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="exit_menu" 
+                Grid.Column="1" 
+                Grid.Row="2" 
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Left"
+                Click="Exit_Menu_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/close.png"/>
+            </Button.Background>
+
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#39385d"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#3a3952"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Height="80" 
+                            Width="80"
+                            CornerRadius="0">
+                        <Border.Background>
+                            <ImageBrush ImageSource="Images/close.png"/>
+                        </Border.Background>
+                        <ContentPresenter VerticalAlignment="Center"
+                                          HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="back" 
+                Grid.Column="1" 
+                Grid.Row="2" 
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Left"
+                Click="Back_Menu_Click" 
+                Margin="85,0,0,0">
+            <Button.Background>
+                <ImageBrush ImageSource="Images/back.png"/>
+            </Button.Background>
+
+
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#39385d"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#3a3952"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Height="80" 
+                            Width="80"
+                            CornerRadius="0"
+                            Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center"
+                                          HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+
+        <Grid
+            Margin="93,-209,-1053,-22"
+            Panel.ZIndex="-1" 
+            Grid.Column="2" 
+            Grid.RowSpan="3">
+            <Grid.RenderTransform>
+                <RotateTransform Angle="50"/>
+            </Grid.RenderTransform>
+            <StackPanel Orientation="Horizontal"
+                        Margin="34,-3,-641,2">
+                <StackPanel>
+                    <Border Width="700"
+                            Height="35"
+                            Background="#ff008fff"
+                            Margin="150,0,0,0"
+                            CornerRadius="20"/>
+                    <Border Width="700"
+                            Height="35"
+                            Background="Yellow"
+                            Margin="0,15,0,0"
+                            CornerRadius="20"/>
+                    <Border Width="700"
+                            Height="35"
+                            Background="#39385d"
+                            Margin="150,15,0,0"
+                            CornerRadius="20"/>
+                </StackPanel>
+            </StackPanel>
+
+        </Grid>
+        <Image Grid.Column="1" 
+               HorizontalAlignment="Left" 
+               Height="362" 
+               Grid.Row="2" 
+               VerticalAlignment="Center" 
+               Width="352" 
+               Source="Images/sticker2.png"/>
+
+    </Grid>
+</Window>
