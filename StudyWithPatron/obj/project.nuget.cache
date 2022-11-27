@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2RAmoNI6MDhq0JU079NKljocUrzpbUwcNkhcSApkQpIWFwvVCYq+n+Ty5oqWi6R52NczIusE9tVN7bUgItPleQ==",
+  "dgSpecHash": "vpoMz/xPvwF5nk0VYEOTrYGp21Wigf0LyzdCCxaDT5x3EbxphGRxgEPLXjxhYw1NNSX3BEfCq/kMnrFu1xvr5A==",
   "success": true,
-  "projectFilePath": "D:\\Навчання\\StudyWithPatron\\StudyWithPatron.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

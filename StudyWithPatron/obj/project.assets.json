@@ -3839,11 +3839,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Навчання\\StudyWithPatron\\StudyWithPatron.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj",
       "projectName": "StudyWithPatron",
-      "projectPath": "D:\\Навчання\\StudyWithPatron\\StudyWithPatron.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\Навчання\\StudyWithPatron\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\StudyWithPatron\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
