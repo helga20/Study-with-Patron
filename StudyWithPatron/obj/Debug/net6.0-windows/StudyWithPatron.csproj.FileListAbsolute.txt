@@ -290,3 +290,8 @@ C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\StudyWithPatron\obj\Debug
 C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\StudyWithPatron\obj\Debug\net6.0-windows\StudyWithPatron.pdb
 C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\StudyWithPatron\obj\Debug\net6.0-windows\StudyWithPatron.genruntimeconfig.cache
 C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\StudyWithPatron\obj\Debug\net6.0-windows\ref\StudyWithPatron.dll
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\StudyWithPatron\bin\Debug\net6.0-windows\DAL\BombsDB.db
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\StudyWithPatron\bin\Debug\net6.0-windows\DAL\RatingDB.db
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\StudyWithPatron\bin\Debug\net6.0-windows\Sounds\sound1.wav
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\StudyWithPatron\obj\Debug\net6.0-windows\StudyWithPatron.csproj.GenerateResource.cache
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\StudyWithPatron\obj\Debug\net6.0-windows\StudyWithPatron.Properties.ResourcesSounds.resources

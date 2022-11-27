@@ -44,10 +44,8 @@
             Content="♥" 
             x:Name="heart2"
             HorizontalAlignment="Left" 
-            Margin="60,-20,0,0" 
-            VerticalAlignment="Top"
+            Margin="60,-20,0,0"
             FontSize="58" 
-            Height="70" 
             Width="50" 
             IsEnabled="False" 
             Foreground="#FFDE1253"/>

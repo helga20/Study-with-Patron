@@ -39,7 +39,7 @@
                        FontWeight="Black"
                        Margin="0,17,132,0"/>
         </Grid>
-       
+
 
         <Button x:Name="one" 
                 Grid.Column="1" 
@@ -84,6 +84,7 @@
                 VerticalAlignment="Bottom"
                 HorizontalAlignment="Left"
                 Click="Exit_Menu_Click">
+
             <Button.Background>
                 <ImageBrush ImageSource="Images/close.png"/>
             </Button.Background>
@@ -118,9 +119,10 @@
                 Grid.Column="1" 
                 Grid.Row="2" 
                 VerticalAlignment="Bottom"
-                HorizontalAlignment="Left"
+                HorizontalAlignment="Right"
                 Click="Back_Menu_Click" 
-                Margin="85,0,0,0">
+                Margin="0,0,314,0">
+
             <Button.Background>
                 <ImageBrush ImageSource="Images/back.png"/>
             </Button.Background>
@@ -759,6 +761,36 @@
                VerticalAlignment="Top" 
                Width="280" 
                Source="Images/Pes ok.png"/>
+        <Grid
+            Margin="274,-214,-1235,-17"
+            Panel.ZIndex="-1" 
+            Grid.Column="2" 
+            Grid.RowSpan="3">
+            <Grid.RenderTransform>
+                <RotateTransform Angle="50"/>
+            </Grid.RenderTransform>
+            <StackPanel Orientation="Horizontal"
+                Margin="34,-3,-641,2">
+                <StackPanel>
+                    <Border Width="700"
+                        Height="35"
+                        Background="#ff008fff"
+                        Margin="150,0,0,0"
+                        CornerRadius="20"/>
+                    <Border Width="700"
+                        Height="35"
+                        Background="Yellow"
+                        Margin="0,15,0,0"
+                        CornerRadius="20"/>
+                    <Border Width="700"
+                        Height="35"
+                        Background="#39385d"
+                        Margin="150,15,0,0"
+                        CornerRadius="20"/>
+                </StackPanel>
+            </StackPanel>
+
+        </Grid>
 
     </Grid>
 </Window>

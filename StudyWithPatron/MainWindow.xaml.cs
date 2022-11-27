@@ -14,6 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using StudyWithPatron.BLL;
 using StudyWithPatron.DAL;
+using System.Media;
+
 namespace StudyWithPatron
 {
     /// <summary>
@@ -27,6 +29,9 @@ namespace StudyWithPatron
         }
         private void Start_game_Click(object sender, RoutedEventArgs e)
         {
+            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.sound1);
+            playSound.Play();
+
             MenuWindow menu_win = new MenuWindow();
             this.Visibility = Visibility.Hidden;
             menu_win.Show();
@@ -34,6 +39,9 @@ namespace StudyWithPatron
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
+            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.close);
+            playSound.Play();
+
             Close();
         }
     }

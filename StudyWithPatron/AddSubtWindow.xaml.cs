@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -13,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using StudyWithPatron.BLL;
 using StudyWithPatron.DAL;
+
 namespace StudyWithPatron;
 
 /// <summary>
@@ -29,6 +31,9 @@ public partial class AddSubtWindow : Window
 
     private void Clear_Click(object sender, RoutedEventArgs e)
     {
+        SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.clear);
+        playSound.Play();
+
         result_TextBox.Text = "";
     }
     public char GetModul()
@@ -59,6 +64,9 @@ public partial class AddSubtWindow : Window
     }
     private void Check_Click(object sender, RoutedEventArgs e)
     {
+        SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.check);
+        playSound.Play();
+
         if (result_TextBox.Text == "")
         {
             MessageBox.Show("Введи свою відповідь)");
@@ -78,6 +86,9 @@ public partial class AddSubtWindow : Window
             }
             else
             {
+                SoundPlayer playSound1 = new SoundPlayer(Properties.ResourcesSounds.error);
+                playSound1.Play();
+
                 MessageBox.Show("Обережно, ти відповів неправильно");
                 counter--;
                 if (counter < 0)
@@ -93,7 +104,8 @@ public partial class AddSubtWindow : Window
             }
             if (counter == 25)
             {
-                MessageBox.Show("Вітаю ти пройшов урок");
+
+                MessageBox.Show("Вітаю! Ти пройшов урок");
                 MenuWindow menu_win = new MenuWindow();
                 this.Visibility = Visibility.Hidden;
                 menu_win.Show();
@@ -124,6 +136,9 @@ public partial class AddSubtWindow : Window
 
     private void Next_Level_Click(object sender, RoutedEventArgs e)
     {
+        SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.sound1);
+        playSound.Play();
+
         AddSubtWindow add_win = new AddSubtWindow();
         this.Visibility = Visibility.Hidden;
         add_win.Show();
@@ -131,6 +146,9 @@ public partial class AddSubtWindow : Window
 
     private void Back_Menu_Click(object sender, RoutedEventArgs e)
     {
+        SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.back);
+        playSound.Play();
+
         MenuWindow menu_win = new MenuWindow();
         this.Visibility = Visibility.Hidden;
         menu_win.Show();
@@ -138,8 +156,10 @@ public partial class AddSubtWindow : Window
 
     private void Exit_Menu_Click(object sender, RoutedEventArgs e)
     {
-        Close();
+        SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.close);
+        playSound.Play();
 
+        Close();
     }
 
     private void One_Click(object sender, RoutedEventArgs e)
@@ -210,7 +230,10 @@ public partial class AddSubtWindow : Window
         {
             if (!char.IsNumber(tString[i]))
             {
-                MessageBox.Show("Будь ласка, введіть число");
+                SoundPlayer playSound1 = new SoundPlayer(Properties.ResourcesSounds.error);
+                playSound1.Play();
+
+                MessageBox.Show("Будь ласка, введи число");
                 result_TextBox.Text = "";
                 return;
             }

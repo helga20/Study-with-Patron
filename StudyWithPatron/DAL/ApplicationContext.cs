@@ -18,9 +18,10 @@ namespace StudyWithPatron.DAL
         
         public DbSet<Bombs> Boomb { get; set; }
 
-        string path = Path.Combine(Environment.CurrentDirectory, @"DAL", "RatingDB.db");
+        // string path = Path.Combine(Environment.CurrentDirectory, @"DAL", "RatingDB.db");
 
-        // public string path = @"D:\Навчання\StudyWithPatron\DAL\UserScoresBD.db";
+        //public string path = @"C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\StudyWithPatron\DAL\UserScoresDB.db";
+        string path = Path.Combine(Environment.CurrentDirectory, @"DAL", "UserScoresDB.db");
 
         protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseSqlite($"Data Source={path}");
 

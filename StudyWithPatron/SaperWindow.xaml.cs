@@ -14,6 +14,8 @@ using System.Windows.Shapes;
 using System.Windows.Threading;
 using StudyWithPatron.BLL;
 using StudyWithPatron.DAL;
+using System.Media;
+
 namespace StudyWithPatron
 {
     /// <summary>
@@ -34,6 +36,7 @@ namespace StudyWithPatron
         private void DispatcherTimer_Tick(object sender, EventArgs e)
         {
             MessageBox.Show("Слідкуй за часом");
+
             Check_Hearts();
             counter--;
             if (counter < 0)
@@ -41,6 +44,7 @@ namespace StudyWithPatron
                 counter = 0;
             }
             score.Content = "Рахунок - " + counter;
+            
             NextSol();
         }
 
@@ -64,7 +68,7 @@ namespace StudyWithPatron
             {
                 if (!char.IsNumber(tString[i]))
                 {
-                    MessageBox.Show("Будь ласка, введіть число");
+                    MessageBox.Show("Будь ласка, введи число");
                     result_TextBox.Text = "";
                     return;
                 }
@@ -73,6 +77,9 @@ namespace StudyWithPatron
 
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
+            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.clear);
+            playSound.Play();
+
             result_TextBox.Text = "";
         }
 
@@ -150,13 +157,20 @@ namespace StudyWithPatron
             timer_time.Content = i.ToString();
             if (i == 0)
             {
+                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.error);
+                playSound.Play();
+
                 MessageBox.Show("Час вийшов");
                 timer.Stop();
             }
+
         }
 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
+            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.sound1);
+            playSound.Play();
+
             timer.IsEnabled = true;
 
             //Timer_set();
@@ -215,6 +229,10 @@ namespace StudyWithPatron
             else if (heart1.Visibility == Visibility.Visible)
             {
                 heart1.Visibility = Visibility.Collapsed;
+
+                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.gameover);
+                playSound.Play();
+
                 MessageBox.Show("Не залишилося спроб. Гра завершена");
                 MenuWindow m_win = new MenuWindow();
                 this.Visibility = Visibility.Hidden;
@@ -224,6 +242,9 @@ namespace StudyWithPatron
 
         private void Check_Click(object sender, RoutedEventArgs e)
         {
+            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.check);
+            playSound.Play();
+
             i = 11;// для  часу
 
             if (result_TextBox.Text == "")
@@ -247,6 +268,9 @@ namespace StudyWithPatron
                 }
                 else
                 {
+                    SoundPlayer playSound1 = new SoundPlayer(Properties.ResourcesSounds.error);
+                    playSound1.Play();
+
                     MessageBox.Show("Обережно, ти відповів неправильно");
                     Check_Hearts();
                     counter--;
@@ -274,6 +298,9 @@ namespace StudyWithPatron
 
         private void Back_Menu_Click(object sender, RoutedEventArgs e)
         {
+            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.back);
+            playSound.Play();
+
             RegistrationWindow reg_win = new RegistrationWindow();
             this.Visibility = Visibility.Hidden;
             reg_win.Show();
@@ -281,6 +308,9 @@ namespace StudyWithPatron
 
         private void Exit_Menu_Click(object sender, RoutedEventArgs e)
         {
+            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.close);
+            playSound.Play();
+
             Close();
         }
 
