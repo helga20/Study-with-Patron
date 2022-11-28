@@ -15,6 +15,7 @@ namespace StudyWithPatron.BLL
 
         public UserScores(string name, int result)
         {
+           // this.Id = Id;
             this.name = name;
             this.result = result;
         }

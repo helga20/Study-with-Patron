@@ -13,9 +13,11 @@ namespace StudyWithPatron.BLL
 
         public int result { get; set; }
 
-        public Bombs(int result)
+        public int id_scores { get; set; }
+        public Bombs(int result, int id_scores)
         {
             this.result = result;
+            this.id_scores = id_scores;
         }
     }
 }

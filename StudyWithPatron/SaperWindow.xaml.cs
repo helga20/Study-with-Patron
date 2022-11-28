@@ -138,8 +138,8 @@ namespace StudyWithPatron
                 //UserScores user_score = new UserScores(Globals.name, Globals.result);
                 //db.UserScore.Add(user_score);
                 //db.SaveChanges();
-
-                Bombs bombs = new Bombs(Globals.result_bombs);
+                int id_scores = 0;
+                Bombs bombs = new Bombs(Globals.result_bombs, id_scores);
                 db.Bomb.Add(bombs);
                 db.SaveChanges();
             }
