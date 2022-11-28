@@ -30,8 +30,11 @@ namespace StudyWithPatron
         }
         private void Rating_Click(object sender, RoutedEventArgs e)
         {
-            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.sound1);
-            playSound.Play();
+            if (Globals.Checks_Sound == true)
+            {
+                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.sound1);
+                playSound.Play();
+            }
 
             RatingWindow rat_win = new RatingWindow();
             this.Visibility = Visibility.Hidden;
@@ -40,8 +43,11 @@ namespace StudyWithPatron
 
         private void Exit_Menu_Click(object sender, RoutedEventArgs e)
         {
-            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.close);
-            playSound.Play();
+            if (Globals.Checks_Sound == true)
+            {
+                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.close);
+                playSound.Play();
+            }
 
             Close();
         }
@@ -60,15 +66,21 @@ namespace StudyWithPatron
 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
-            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.sound1);
-            playSound.Play();
+            if (Globals.Checks_Sound == true)
+            {
+                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.sound1);
+                playSound.Play();
+            }
 
             if (String.IsNullOrEmpty(nickname_textbox.Text))
             {
                 nickname_textbox.Background = Brushes.Red;
 
-                SoundPlayer playSound1 = new SoundPlayer(Properties.ResourcesSounds.error);
-                playSound1.Play();
+                if (Globals.Checks_Sound == true)
+                {
+                    SoundPlayer playSound1 = new SoundPlayer(Properties.ResourcesSounds.error);
+                    playSound1.Play();
+                }
 
                 MessageBox.Show("Псевдонім не введено.\nПовторіть спробу");
             }

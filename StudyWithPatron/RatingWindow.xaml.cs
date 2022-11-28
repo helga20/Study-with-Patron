@@ -27,16 +27,22 @@ namespace StudyWithPatron
         }
         private void Exit_Menu_Click(object sender, RoutedEventArgs e)
         {
-            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.close);
-            playSound.Play();
+            if (Globals.Checks_Sound == true)
+            {
+                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.close);
+                playSound.Play();
+            }
 
             Close();
         }
 
         private void Back_Menu_Click(object sender, RoutedEventArgs e)
         {
-            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.back);
-            playSound.Play();
+            if (Globals.Checks_Sound == true)
+            {
+                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.back);
+                playSound.Play();
+            }
 
             RegistrationWindow reg_win = new RegistrationWindow();
             this.Visibility = Visibility.Hidden;

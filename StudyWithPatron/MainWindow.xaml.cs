@@ -18,6 +18,10 @@ using System.Media;
 
 namespace StudyWithPatron
 {
+    public static class Globals
+    {
+        public static bool Checks_Sound;
+    }
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -29,8 +33,12 @@ namespace StudyWithPatron
         }
         private void Start_game_Click(object sender, RoutedEventArgs e)
         {
-            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.sound1);
-            playSound.Play();
+            if (Globals.Checks_Sound == true)
+            {
+                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.sound1);
+                playSound.Play();
+            }
+
 
             MenuWindow menu_win = new MenuWindow();
             this.Visibility = Visibility.Hidden;
@@ -39,10 +47,18 @@ namespace StudyWithPatron
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
-            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.close);
-            playSound.Play();
-
+            if(Globals.Checks_Sound == true)
+            {
+                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.close);
+                playSound.Play();
+            }
             Close();
         }
+
+        private void Check_Sound_Checked(object sender, RoutedEventArgs e)
+        {
+            Globals.Checks_Sound = true;
+        }
+
     }
 }

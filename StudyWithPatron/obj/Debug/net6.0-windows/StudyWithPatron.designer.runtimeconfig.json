@@ -12,10 +12,10 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Lenovo\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Lenovo\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-      "C:\\Microsoft\\Xamarin\\NuGet"
+      "C:\\Users\\Назар\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Назар\\.nuget\\packages",
+      "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,

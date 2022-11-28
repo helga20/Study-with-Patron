@@ -41,12 +41,11 @@
                        Grid.ColumnSpan="1"/>
         </Grid>
         <Image HorizontalAlignment="Left"
-               Height="440" 
+               Height="296" 
                Grid.Row="2" 
                VerticalAlignment="Center" 
                Width="430" 
-               Source="Images/154a53e4133c60ecf6c2da5f7c291672.png"
-               Grid.Column="1"/>
+               Source="Images/154a53e4133c60ecf6c2da5f7c291672.png" Grid.ColumnSpan="2" Margin="17,0,0,0"/>
 
         <Button x:Name="start_game" 
                 Grid.Column="2" 
@@ -118,6 +117,31 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        <CheckBox x:Name="Check_Sound" 
+                  Grid.Column="1" 
+                  Content="Звуки" 
+                  HorizontalAlignment="Left" 
+                  Margin="85,520,0,0" 
+                  Grid.Row="2" 
+                  VerticalAlignment="Top"  
+                  Height="53" 
+                  Width="170" 
+                  FontSize="20"
+                  Foreground="White"
+                  Background="#ffffff"
+                  Checked="Check_Sound_Checked" 
+                  Cursor="Hand" 
+                  RenderTransformOrigin="0.5,0.5" Panel.ZIndex="-2">
+            <CheckBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2" ScaleY="2"/>
+                </TransformGroup>
+            </CheckBox.RenderTransform>
+            <CheckBox.BorderBrush>
+                <SolidColorBrush Color="White"
+                                 Opacity="0.3"/>
+            </CheckBox.BorderBrush>
+        </CheckBox>
 
         <Grid
                 Margin="97,-262,-1057,31"

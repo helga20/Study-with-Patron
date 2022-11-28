@@ -31,8 +31,11 @@ namespace StudyWithPatron
 
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
-            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.clear);
-            playSound.Play();
+            if (Globals.Checks_Sound == true)
+            {
+                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.clear);
+                playSound.Play();
+            }
 
             result_TextBox.Text = "";
         }
@@ -165,8 +168,11 @@ namespace StudyWithPatron
 
         private void Check_Click(object sender, RoutedEventArgs e)
         {
-            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.check);
-            playSound.Play();
+            if (Globals.Checks_Sound == true)
+            {
+                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.check);
+                playSound.Play();
+            }
 
             if (result_TextBox.Text == "")
             {
@@ -189,8 +195,11 @@ namespace StudyWithPatron
                 }
                 else
                 {
-                    SoundPlayer playSound1 = new SoundPlayer(Properties.ResourcesSounds.error);
-                    playSound1.Play();
+                    if (Globals.Checks_Sound == true)
+                    {
+                        SoundPlayer playSound1 = new SoundPlayer(Properties.ResourcesSounds.error);
+                        playSound1.Play();
+                    }
 
                     MessageBox.Show("Обережно, ти відповів неправильно");
                     counter--;
@@ -217,8 +226,11 @@ namespace StudyWithPatron
 
         private void Next_Level_Click(object sender, RoutedEventArgs e)
         {
-            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.sound1);
-            playSound.Play();
+            if (Globals.Checks_Sound == true)
+            {
+                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.sound1);
+                playSound.Play();
+            }
 
             MultDivWindow mult_win = new MultDivWindow();
             this.Visibility = Visibility.Hidden;
@@ -227,8 +239,11 @@ namespace StudyWithPatron
 
         private void Back_Menu_Click(object sender, RoutedEventArgs e)
         {
-            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.back);
-            playSound.Play();
+            if (Globals.Checks_Sound == true)
+            {
+                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.back);
+                playSound.Play();
+            }
 
             MenuWindow menu_win = new MenuWindow();
             this.Visibility = Visibility.Hidden;
@@ -237,8 +252,11 @@ namespace StudyWithPatron
 
         private void Exit_Menu_Click(object sender, RoutedEventArgs e)
         {
-            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.close);
-            playSound.Play();
+            if (Globals.Checks_Sound == true)
+            {
+                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.close);
+                playSound.Play();
+            }
 
             Close();
         }
