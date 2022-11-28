@@ -51,14 +51,14 @@
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
                        
-                        <TextBlock Text="{Binding name, Mode = TwoWay}"  
+                        <TextBlock Text="{Binding name}"  
                                    FontSize="16" 
                                    Foreground="White" 
                                    Grid.Column="0"/>
                         <TextBlock Text="   "  
                                    FontSize="16" 
                                    Foreground="White"/>
-                        <TextBlock Text="{ Binding result, Mode = TwoWay}" 
+                        <TextBlock Text="{ Binding result}" 
                                    FontSize="16" 
                                    Foreground="White" 
                                    Grid.Column="2"/>

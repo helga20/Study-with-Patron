@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\WPF_PATRON_sounds\StudyWithPatron\obj\Debug\net6.0-windows\
+C:\Users\Admin\Source\Repos\Study-with-Patron\StudyWithPatron\obj\Debug\net6.0-windows\
 StudyWithPatron
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-E:\WPF_PATRON_sounds\StudyWithPatron\App.xaml
+C:\Users\Admin\Source\Repos\Study-with-Patron\StudyWithPatron\App.xaml
 7140616262
 
 16125368208
-228-1195305505
+228-1752408578
 AddSubtWindow.xaml;MainWindow.xaml;MenuWindow.xaml;MultDivWindow.xaml;RatingWindow.xaml;RegistrationWindow.xaml;SaperWindow.xaml;
 
-True
+False
 

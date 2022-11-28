@@ -137,7 +137,7 @@ namespace StudyWithPatron
                 Globals.result_bombs = score2;
                 // Globals.result = counter;
 
-                //Bombs bombs = new Bombs(Globals.result_bombs);
+               // Bombs bombs = new Bombs(Globals.result_bombs);
                 //db.Bomb.Add(bombs);
                 //db.SaveChanges();
             }
@@ -375,11 +375,14 @@ namespace StudyWithPatron
                 }
 
                 MessageBox.Show("Не залишилося спроб. Гра завершена");
-
-                Globals.result = counter;
                 UserScores user_score = new UserScores(Globals.name, Globals.result);
                 db.UserScore.Add(user_score);
                 db.SaveChanges();
+                
+                ////Globals.result = counter;
+                ////UserScores user_score = new UserScores(Globals.name, Globals.result);
+                ////db.UserScore.Add(user_score);
+                ////db.SaveChanges();
 
                 //Bombs bombs = new Bombs(Globals.result_bombs);
                 //db.Bomb.Add(bombs);
@@ -407,6 +410,7 @@ namespace StudyWithPatron
         private void Check_Click(object sender, RoutedEventArgs e)
         {
             int total_score = counter + score2;
+            
             if (Globals.Checks_Sound == true)
             {
                 SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.check);
@@ -465,7 +469,11 @@ namespace StudyWithPatron
                     max = 130;
                 }
             }
+            Globals.result = total_score;
+            
         }
+        
+                
         private void Back_Menu_Click(object sender, RoutedEventArgs e)
         {
             if (Globals.Checks_Sound == true)
@@ -477,6 +485,7 @@ namespace StudyWithPatron
             RegistrationWindow reg_win = new RegistrationWindow();
             this.Visibility = Visibility.Hidden;
             reg_win.Show();
+            db.SaveChanges();
         }
 
         private void Exit_Menu_Click(object sender, RoutedEventArgs e)
@@ -488,6 +497,7 @@ namespace StudyWithPatron
             }
 
             Close();
+            db.SaveChanges();
         }
         private void EnterClicked(object sender, KeyEventArgs e)
         {

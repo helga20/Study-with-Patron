@@ -22,7 +22,7 @@ namespace StudyWithPatron.DAL
 
         //public string path = @"C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\StudyWithPatron\DAL\UserScoresDB.db";
         //string path = Path.Combine(Environment.CurrentDirectory, @"DAL", "UserScoresDB.db");
-        string path = Path.Combine(Environment.CurrentDirectory, @"DAL", "RatingDB.db");
+        string path = Path.Combine(Environment.CurrentDirectory, @"DAL", "UserScoresDB.db");
 
         protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseSqlite($"Data Source={path}");
 

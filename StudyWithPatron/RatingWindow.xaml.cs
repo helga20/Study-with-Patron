@@ -24,18 +24,19 @@ namespace StudyWithPatron
     /// </summary>
     public partial class RatingWindow : Window
     {
-        ApplicationContext db;
+        ApplicationContext db = new ApplicationContext();
+     //   ApplicationContext db;
         public RatingWindow()
         {
-            db = new ApplicationContext();
+       //     db = new ApplicationContext();
             InitializeComponent();
             db.Database.EnsureCreated();
-
             db.UserScore.Load();
-            db.Bomb.Load();
+
+         //   db.Bomb.Load();
 
             DataContext = db.UserScore.Local.ToObservableCollection();
-            DataContext = db.Bomb.Local.ToObservableCollection();
+           // DataContext = db.Bomb.Local.ToObservableCollection();
         }
         private void Exit_Menu_Click(object sender, RoutedEventArgs e)
         {

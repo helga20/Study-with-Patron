@@ -408,7 +408,6 @@ E:\WPF_Project_Study_with_sound\StudyWithPatron\obj\Debug\net6.0-windows\ref\Stu
 C:\Users\Admin\Source\Repos\Study-with-Patron\StudyWithPatron\bin\Debug\net6.0-windows\StudyWithPatron.exe
 C:\Users\Admin\Source\Repos\Study-with-Patron\StudyWithPatron\bin\Debug\net6.0-windows\DAL\BombsDB.db
 C:\Users\Admin\Source\Repos\Study-with-Patron\StudyWithPatron\bin\Debug\net6.0-windows\DAL\RatingDB.db
-C:\Users\Admin\Source\Repos\Study-with-Patron\StudyWithPatron\bin\Debug\net6.0-windows\DAL\UserScoresDB.db
 C:\Users\Admin\Source\Repos\Study-with-Patron\StudyWithPatron\bin\Debug\net6.0-windows\Sounds\sound1.wav
 C:\Users\Admin\Source\Repos\Study-with-Patron\StudyWithPatron\bin\Debug\net6.0-windows\StudyWithPatron.dll.config
 C:\Users\Admin\Source\Repos\Study-with-Patron\StudyWithPatron\bin\Debug\net6.0-windows\StudyWithPatron.deps.json
@@ -742,3 +741,4 @@ E:\WPF_PATRON_sounds\StudyWithPatron\obj\Debug\net6.0-windows\refint\StudyWithPa
 E:\WPF_PATRON_sounds\StudyWithPatron\obj\Debug\net6.0-windows\StudyWithPatron.pdb
 E:\WPF_PATRON_sounds\StudyWithPatron\obj\Debug\net6.0-windows\StudyWithPatron.genruntimeconfig.cache
 E:\WPF_PATRON_sounds\StudyWithPatron\obj\Debug\net6.0-windows\ref\StudyWithPatron.dll
+C:\Users\Admin\Source\Repos\Study-with-Patron\StudyWithPatron\bin\Debug\net6.0-windows\Images\Bomb.png
