@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using StudyWithPatron.BLL;
 using StudyWithPatron.DAL;
@@ -29,6 +30,7 @@ namespace StudyWithPatron
             db = new ApplicationContext();
             InitializeComponent();
             db.Database.EnsureCreated();
+
             db.UserScore.Load();
             db.Bomb.Load();
 
@@ -42,7 +44,6 @@ namespace StudyWithPatron
                 SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.close);
                 playSound.Play();
             }
-
             Close();
         }
 
@@ -57,11 +58,6 @@ namespace StudyWithPatron
             RegistrationWindow reg_win = new RegistrationWindow();
             this.Visibility = Visibility.Hidden;
             reg_win.Show();
-        }
-
-        private void usersList_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
+        }  
     }
 }

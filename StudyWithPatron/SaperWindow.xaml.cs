@@ -43,7 +43,7 @@ namespace StudyWithPatron
         public SaperWindow()
         {
             InitializeComponent();
-                        db = new ApplicationContext();
+            db = new ApplicationContext();
 
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += timer_Tick;
@@ -114,7 +114,7 @@ namespace StudyWithPatron
             {
                 gameIsActive = false;
                 gameTimer.Stop();
-                //     MessageBox.Show("Game over!! You missed 10 Balloons" + Environment.NewLine + "Click ok to play again");
+
                 RestartGame();
             }
             if (score2 > 3)
@@ -133,15 +133,13 @@ namespace StudyWithPatron
                     MyCanvas.Children.Remove(activeRec);
                     score2 += 1;
                 }
+
                 Globals.result_bombs = score2;
                 // Globals.result = counter;
-                //UserScores user_score = new UserScores(Globals.name, Globals.result);
-                //db.UserScore.Add(user_score);
+
+                //Bombs bombs = new Bombs(Globals.result_bombs);
+                //db.Bomb.Add(bombs);
                 //db.SaveChanges();
-                int id_scores = 0;
-                Bombs bombs = new Bombs(Globals.result_bombs, id_scores);
-                db.Bomb.Add(bombs);
-                db.SaveChanges();
             }
         }
 

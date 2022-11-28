@@ -24,7 +24,7 @@ namespace StudyWithPatron
         public static string? name;
         public static int  result;
         public static int result_bombs;
-
+        //public static int id_score;
     }
     /// <summary>
     /// Interaction logic for MainWindow.xaml

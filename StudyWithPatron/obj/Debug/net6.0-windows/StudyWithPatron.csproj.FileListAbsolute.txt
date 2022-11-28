@@ -517,7 +517,6 @@ C:\Users\Admin\Source\Repos\Study-with-Patron\StudyWithPatron\obj\Debug\net6.0-w
 C:\Users\Admin\Source\Repos\Study-with-Patron\StudyWithPatron\obj\Debug\net6.0-windows\StudyWithPatron.genruntimeconfig.cache
 C:\Users\Admin\Source\Repos\Study-with-Patron\StudyWithPatron\obj\Debug\net6.0-windows\ref\StudyWithPatron.dll
 C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\StudyWithPatron\bin\Debug\net6.0-windows\Images\Bomb.png
-C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\StudyWithPatron\bin\Debug\net6.0-windows\DAL\RatingDB.db
 E:\WPF_Project_Study_with_sounds\StudyWithPatron\bin\Debug\net6.0-windows\StudyWithPatron.exe
 E:\WPF_Project_Study_with_sounds\StudyWithPatron\bin\Debug\net6.0-windows\DAL\BombsDB.db
 E:\WPF_Project_Study_with_sounds\StudyWithPatron\bin\Debug\net6.0-windows\DAL\RatingDB.db
@@ -630,3 +629,4 @@ E:\WPF_Project_Study_with_sounds\StudyWithPatron\obj\Debug\net6.0-windows\refint
 E:\WPF_Project_Study_with_sounds\StudyWithPatron\obj\Debug\net6.0-windows\StudyWithPatron.pdb
 E:\WPF_Project_Study_with_sounds\StudyWithPatron\obj\Debug\net6.0-windows\StudyWithPatron.genruntimeconfig.cache
 E:\WPF_Project_Study_with_sounds\StudyWithPatron\obj\Debug\net6.0-windows\ref\StudyWithPatron.dll
+C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\StudyWithPatron\bin\Debug\net6.0-windows\DAL\RatingDB.db

@@ -10,10 +10,14 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Microsoft.Data.Sqlite;
 using StudyWithPatron.BLL;
 using StudyWithPatron.DAL;
+using StudyWithPatron.Properties;
+using System.Data;
 
 namespace StudyWithPatron
 {
@@ -64,11 +68,6 @@ namespace StudyWithPatron
             MenuWindow menu_win = new MenuWindow();
             this.Visibility = Visibility.Hidden;
             menu_win.Show();
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
 
         private void Start_Click(object sender, RoutedEventArgs e)

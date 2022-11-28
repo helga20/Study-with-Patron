@@ -39,26 +39,26 @@
                        HorizontalAlignment="Center"
                        Grid.ColumnSpan="1"/>
         </Grid>
-        <ListBox x:Name="usersList" ItemsSource="{Binding}" 
+        <ListBox x:Name="usersList"
+                 ItemsSource="{Binding}" 
                  Background="#0F0F2D" 
-                 Margin="125,67,100,120" 
+                 Margin="104,68,121,118" 
                  Grid.Column="1"
                  Grid.Row="2" 
                  RenderTransformOrigin="0.447,0.477"
-                 SelectionChanged="usersList_SelectionChanged"
                  Grid.ColumnSpan="2">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-
-                        <TextBlock Text="{Binding name }"  
+                       
+                        <TextBlock Text="{Binding name, Mode = TwoWay}"  
                                    FontSize="16" 
                                    Foreground="White" 
                                    Grid.Column="0"/>
                         <TextBlock Text="   "  
                                    FontSize="16" 
                                    Foreground="White"/>
-                        <TextBlock Text="{ Binding result}" 
+                        <TextBlock Text="{ Binding result, Mode = TwoWay}" 
                                    FontSize="16" 
                                    Foreground="White" 
                                    Grid.Column="2"/>
