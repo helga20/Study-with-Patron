@@ -291,6 +291,7 @@ namespace StudyWithPatron
 
                 MessageBox.Show("Час вийшов");
                 timer.Stop();
+                Check_Hearts();
             }
 
         }
@@ -344,6 +345,7 @@ namespace StudyWithPatron
             number_1.Content = a_1.ToString();
             number_2.Content = b_1.ToString();
             modul_.Content = modul.ToString();
+            
         }
 
         private void Check_Hearts()
@@ -351,10 +353,16 @@ namespace StudyWithPatron
             if (heart3.Visibility == Visibility.Visible)
             {
                 heart3.Visibility = Visibility.Collapsed;
+                timer.IsEnabled = true;
+                timer.Start();
+                i = 11; // для таймеру 
             }
             else if (heart2.Visibility == Visibility.Visible)
             {
                 heart2.Visibility = Visibility.Collapsed;
+                timer.IsEnabled = true;
+                timer.Start();
+                i = 11; // для таймеру 
             }
             else if (heart1.Visibility == Visibility.Visible)
             {
@@ -398,6 +406,7 @@ namespace StudyWithPatron
 
         private void Check_Click(object sender, RoutedEventArgs e)
         {
+            int total_score = counter + score2;
             if (Globals.Checks_Sound == true)
             {
                 SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.check);
@@ -420,9 +429,9 @@ namespace StudyWithPatron
                 if (res == a + b || res == a - b || res == a / b || res == a * b)
                 {
                     NextSol();
-
+                    
                     counter++;
-                    score.Content = "Рахунок - " + counter;
+                    score.Content = "Рахунок - " + total_score;
                 }
                 else
                 {
@@ -439,8 +448,9 @@ namespace StudyWithPatron
                     {
                         counter = 0;
                     }
-                    score.Content = "Рахунок - " + counter;
+                    score.Content = "Рахунок - " + total_score;
                     NextSol();
+
                 }
                 if (counter >= 15)
                 {
