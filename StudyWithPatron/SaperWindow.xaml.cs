@@ -305,7 +305,6 @@ namespace StudyWithPatron
             RestartGame();
             timer.IsEnabled = true;
 
-            //Timer_set();
             start.Visibility = Visibility.Collapsed;
             max = 10;
             Random rnd = new Random();
@@ -327,7 +326,6 @@ namespace StudyWithPatron
         }
         private void NextSol()
         {
-            //Timer_set();
             result_TextBox.Text = "";
             Random rnd = new Random();
             int a_1 = rnd.Next(1, max);
@@ -458,7 +456,6 @@ namespace StudyWithPatron
                 }
             }
         }
-
         private void Back_Menu_Click(object sender, RoutedEventArgs e)
         {
             if (Globals.Checks_Sound == true)
@@ -482,12 +479,6 @@ namespace StudyWithPatron
 
             Close();
         }
-
-        private void Time_TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
         private void EnterClicked(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Return)

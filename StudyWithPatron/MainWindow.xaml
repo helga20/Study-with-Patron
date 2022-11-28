@@ -25,8 +25,8 @@
         </Grid.ColumnDefinitions>
 
         <Grid Background="#0F0F2D"
-              Grid.ColumnSpan="3" 
-              Grid.RowSpan="2">
+              Grid.ColumnSpan="2" 
+              Grid.RowSpan="2" Grid.Column="1" Margin="12,0,-29,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
 
@@ -118,40 +118,47 @@
             </Button.Template>
         </Button>
         <CheckBox x:Name="Check_Sound" 
-                  Grid.Column="1" 
-                  Content="Звуки" 
-                  HorizontalAlignment="Left" 
-                  Margin="85,520,0,0" 
+                  Grid.Column="2" 
+                  HorizontalAlignment="Right" 
+                  Margin="0,0,143,535" 
                   Grid.Row="2" 
-                  VerticalAlignment="Top"  
-                  Height="53" 
-                  Width="170" 
-                  FontSize="20"
-                  Foreground="White"
-                  Background="#ffffff"
+                  VerticalAlignment="Bottom"  
+                  Height="19" 
+                  Width="24" 
+                  FontSize="13"
+                  Foreground="RoyalBlue"
                   Checked="Check_Sound_Checked" 
                   Cursor="Hand" 
                   RenderTransformOrigin="0.5,0.5" 
-                  Panel.ZIndex="-2">
+                  Panel.ZIndex="-2" 
+                  Background="#FFF2F318">
+
             <CheckBox.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform ScaleX="2" ScaleY="2"/>
+                    <ScaleTransform ScaleX="5" 
+                                    ScaleY="5"/>
                 </TransformGroup>
             </CheckBox.RenderTransform>
             <CheckBox.BorderBrush>
-                <SolidColorBrush Color="White"
+                <SolidColorBrush Color="RoyalBlue"
                                  Opacity="0.3"/>
             </CheckBox.BorderBrush>
         </CheckBox>
 
         <Grid
-                Margin="97,-262,-1057,31"
-            Panel.ZIndex="-1" Grid.Column="2" Grid.RowSpan="3">
+            Margin="126,-262,-1086,31"
+            Panel.ZIndex="-1"
+            Grid.Column="2" 
+            Grid.RowSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="492*"/>
+                <ColumnDefinition Width="959*"/>
+            </Grid.ColumnDefinitions>
             <Grid.RenderTransform>
                 <RotateTransform Angle="50"/>
             </Grid.RenderTransform>
             <StackPanel Orientation="Horizontal"
-                        Margin="-350,250,-255,-250">
+                        Margin="-350,250,-255,-250" Grid.ColumnSpan="2">
                 <StackPanel>
                     <Border Width="700"
                             Height="35"
@@ -188,6 +195,7 @@
                 </StackPanel>
             </StackPanel>
         </Grid>
+        <Image x:Name="sound" Grid.Column="2" HorizontalAlignment="Left" Height="90" Margin="391,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="90" Source="/sound_PN.png" RenderTransformOrigin="0.153,1.13"/>
 
     </Grid>
 </Window>

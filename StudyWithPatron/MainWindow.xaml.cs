@@ -34,6 +34,10 @@ namespace StudyWithPatron
         public MainWindow()
         {
             InitializeComponent();
+            if (Globals.Checks_Sound)
+            {
+                Check_Sound.IsChecked = true;
+            }
         }
         private void Start_game_Click(object sender, RoutedEventArgs e)
         {
@@ -61,7 +65,14 @@ namespace StudyWithPatron
 
         private void Check_Sound_Checked(object sender, RoutedEventArgs e)
         {
-            Globals.Checks_Sound = true;
+            if (Globals.Checks_Sound)
+            {
+                Globals.Checks_Sound = false;
+            }
+            else
+            {
+                Globals.Checks_Sound = true;
+            }
         }
 
     }
