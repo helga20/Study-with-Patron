@@ -21,6 +21,10 @@ namespace StudyWithPatron
     public static class Globals
     {
         public static bool Checks_Sound;
+        public static string? name;
+        public static int  result;
+        public static int result_bombs;
+
     }
     /// <summary>
     /// Interaction logic for MainWindow.xaml

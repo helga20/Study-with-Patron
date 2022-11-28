@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using StudyWithPatron.BLL;
 using StudyWithPatron.DAL;
+
 namespace StudyWithPatron
 {
     /// <summary>
@@ -21,12 +22,12 @@ namespace StudyWithPatron
     /// </summary>
     public partial class RegistrationWindow : Window
     {
-        ApplicationContext db;
+        //ApplicationContext db;
         public RegistrationWindow()
         {
             InitializeComponent();
 
-            db = new ApplicationContext();
+           // db = new ApplicationContext();
         }
         private void Rating_Click(object sender, RoutedEventArgs e)
         {
@@ -54,6 +55,12 @@ namespace StudyWithPatron
 
         private void Back_Menu_Click(object sender, RoutedEventArgs e)
         {
+            if (Globals.Checks_Sound == true)
+            {
+                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.back);
+                playSound.Play();
+            }
+
             MenuWindow menu_win = new MenuWindow();
             this.Visibility = Visibility.Hidden;
             menu_win.Show();
@@ -86,11 +93,14 @@ namespace StudyWithPatron
             }
             else
             {
-                 string name = nickname_textbox.Text.Trim();
-                 int result = 0;
-                 UserScores user_score = new UserScores(name, result);
-                 db.UserScore.Add(user_score);
-                 db.SaveChanges();
+                Globals.name = nickname_textbox.Text.Trim();
+                //UserScores user_score = new UserScores(Globals.name, Globals.result);
+                //db.UserScore.Add(user_score);
+                //db.SaveChanges();
+
+                //Bombs bombs = new Bombs(Globals.result_bombs);
+                //db.Bomb.Add(bombs);
+                //db.SaveChanges();
 
                 SaperWindow sap_win = new SaperWindow();
                 this.Visibility = Visibility.Hidden;

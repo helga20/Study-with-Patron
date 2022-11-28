@@ -600,7 +600,8 @@
             Grid.Row="2" 
             Click="Next_Level_Click" 
             Margin="217,494,0,0" 
-            RenderTransformOrigin="1.607,0.563" Grid.RowSpan="3">
+            RenderTransformOrigin="1.607,0.563"
+            Grid.RowSpan="3">
 
             <Button.Style>
                 <Style TargetType="{x:Type Button}">

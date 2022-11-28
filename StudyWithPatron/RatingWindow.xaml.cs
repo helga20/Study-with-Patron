@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using Microsoft.EntityFrameworkCore;
 using StudyWithPatron.BLL;
 using StudyWithPatron.DAL;
+
 namespace StudyWithPatron
 {
     /// <summary>
@@ -29,8 +30,10 @@ namespace StudyWithPatron
             InitializeComponent();
             db.Database.EnsureCreated();
             db.UserScore.Load();
+            db.Bomb.Load();
 
             DataContext = db.UserScore.Local.ToObservableCollection();
+            DataContext = db.Bomb.Local.ToObservableCollection();
         }
         private void Exit_Menu_Click(object sender, RoutedEventArgs e)
         {
@@ -54,6 +57,11 @@ namespace StudyWithPatron
             RegistrationWindow reg_win = new RegistrationWindow();
             this.Visibility = Visibility.Hidden;
             reg_win.Show();
+        }
+
+        private void usersList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

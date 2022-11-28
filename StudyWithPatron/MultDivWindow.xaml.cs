@@ -212,7 +212,7 @@ namespace StudyWithPatron
                 }
                 if (counter >= 15)
                 {
-                    next_level.Visibility = Visibility.Visible;
+                    next_level.Visibility = Visibility.Collapsed;
                 }
                 if (counter == 25)
                 {
@@ -233,7 +233,7 @@ namespace StudyWithPatron
             }
 
             MultDivWindow mult_win = new MultDivWindow();
-            this.Visibility = Visibility.Hidden;
+            this.Visibility = Visibility.Hidden;      
             mult_win.Show();
         }
 

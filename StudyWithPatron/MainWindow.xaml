@@ -131,7 +131,8 @@
                   Background="#ffffff"
                   Checked="Check_Sound_Checked" 
                   Cursor="Hand" 
-                  RenderTransformOrigin="0.5,0.5" Panel.ZIndex="-2">
+                  RenderTransformOrigin="0.5,0.5" 
+                  Panel.ZIndex="-2">
             <CheckBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="2" ScaleY="2"/>

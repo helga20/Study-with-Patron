@@ -15,6 +15,7 @@ using System.Windows.Threading;
 using StudyWithPatron.BLL;
 using StudyWithPatron.DAL;
 using System.Media;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace StudyWithPatron
 {
@@ -23,6 +24,8 @@ namespace StudyWithPatron
     /// </summary>
     public partial class SaperWindow : Window
     {
+        ApplicationContext db;
+
         DispatcherTimer timer = new DispatcherTimer();
         private int i = 11;
 
@@ -40,6 +43,8 @@ namespace StudyWithPatron
         public SaperWindow()
         {
             InitializeComponent();
+                        db = new ApplicationContext();
+
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += timer_Tick;
             gameTimer.Tick += GameEngine;
@@ -49,8 +54,6 @@ namespace StudyWithPatron
         int max = 0;
         private void GameEngine(object sender, EventArgs e)
         {
-
-
             intervals -= 10;
 
             if (intervals < 1)
@@ -67,9 +70,8 @@ namespace StudyWithPatron
                 switch (balloonSkins)
                 {
                     case 1:
-                        balloonImage.ImageSource = new BitmapImage(new Uri("C:\\Users\\Admin\\Desktop\\пмо-31\\проєкт\\Fuse-Bomb-PNG-Download-Image.png"));
+                        balloonImage.ImageSource = new BitmapImage(new Uri(@"../net6.0-windows/Images/Bomb.png", UriKind.Relative));
                         break;
-                     
                 }
 
                 Rectangle newBalloon = new Rectangle
@@ -90,15 +92,11 @@ namespace StudyWithPatron
 
             foreach (var x in MyCanvas.Children.OfType<Rectangle>())
             {
-
                 if ((string)x.Tag == "balloon")
                 {
-
                     j = rand.Next(-5, 5);
-
                     Canvas.SetTop(x, Canvas.GetTop(x) - speed);
                     Canvas.SetLeft(x, Canvas.GetLeft(x) - (j * -1));
-
                 }
 
                 if (Canvas.GetTop(x) < 20)
@@ -107,48 +105,32 @@ namespace StudyWithPatron
 
                     missedBalloons += 1;
                 }
-
-
             }
-
-
             foreach (Rectangle y in itemRemover)
             {
                 MyCanvas.Children.Remove(y);
             }
-
-
-
             if (missedBalloons > 10)
             {
                 gameIsActive = false;
                 gameTimer.Stop();
                 //     MessageBox.Show("Game over!! You missed 10 Balloons" + Environment.NewLine + "Click ok to play again");
-
                 RestartGame();
             }
-
             if (score2 > 3)
             {
                 speed = 7;
             }
-
-
-
         }
 
         private void PopBalloons(object sender, MouseButtonEventArgs e)
         {
             if (gameIsActive)
             {
-
                 if (e.OriginalSource is Rectangle)
                 {
-
                     Rectangle activeRec = (Rectangle)e.OriginalSource;
-
                     MyCanvas.Children.Remove(activeRec);
-
                     score2 += 1;
                 }
             }
@@ -397,6 +379,32 @@ namespace StudyWithPatron
                 }
 
                 MessageBox.Show("Не залишилося спроб. Гра завершена");
+
+                Globals.result = counter;
+                UserScores user_score = new UserScores(Globals.name, Globals.result);
+                db.UserScore.Add(user_score);
+                db.SaveChanges();
+
+                Bombs bombs = new Bombs(Globals.result_bombs);
+                db.Bomb.Add(bombs);
+                db.SaveChanges();
+
+
+
+
+                /*
+                string name = nickname_textbox.Text.Trim();
+                int result = 0;
+                UserScores user_score = new UserScores(name, result);
+                db.UserScore.Add(user_score);
+                db.SaveChanges();
+
+                int result2 = 0;
+                Bombs bombs = new Bombs(result2);
+                db.Bomb.Add(bombs);
+                db.SaveChanges();
+                */
+
                 MenuWindow m_win = new MenuWindow();
                 this.Visibility = Visibility.Hidden;
                 m_win.Show();
@@ -430,7 +438,6 @@ namespace StudyWithPatron
 
                     counter++;
                     score.Content = "Рахунок - " + counter;
-
                 }
                 else
                 {

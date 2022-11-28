@@ -16,12 +16,13 @@ namespace StudyWithPatron.DAL
 
         public DbSet<UserScores> UserScore { get; set; }
         
-        public DbSet<Bombs> Boomb { get; set; }
+        public DbSet<Bombs> Bomb { get; set; }
 
         // string path = Path.Combine(Environment.CurrentDirectory, @"DAL", "RatingDB.db");
 
         //public string path = @"C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\StudyWithPatron\DAL\UserScoresDB.db";
-        string path = Path.Combine(Environment.CurrentDirectory, @"DAL", "UserScoresDB.db");
+        //string path = Path.Combine(Environment.CurrentDirectory, @"DAL", "UserScoresDB.db");
+        string path = Path.Combine(Environment.CurrentDirectory, @"DAL", "RatingDB.db");
 
         protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseSqlite($"Data Source={path}");
 
