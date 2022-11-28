@@ -39,6 +39,18 @@
                        HorizontalAlignment="Center"
                        Grid.ColumnSpan="1"/>
         </Grid>
+        <ListBox x:Name="usersList" ItemsSource="{Binding}" Background="#0F0F2D" Margin="125,67,115,117" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" RenderTransformOrigin="0.447,0.477">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+
+                        <TextBlock Text="{Binding name }"  FontSize="16" Foreground="White" Grid.Column="0"/>
+                        <TextBlock Text="   "  FontSize="16" Foreground="White"/>
+                        <TextBlock Text="{ Binding result}" FontSize="16" Foreground="White" Grid.Column="2"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
 
         <Button x:Name="exit_menu" 
                 Grid.Column="1" 

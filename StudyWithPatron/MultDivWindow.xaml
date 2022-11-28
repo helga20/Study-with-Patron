@@ -675,7 +675,7 @@
                  Grid.Column="2" 
                  Height="80" 
                  Grid.Row="2" 
-                 TextChanged="Result_TextBox_TextChanged"/>
+                 TextChanged="Result_TextBox_TextChanged" PreviewKeyDown="EnterClicked"/>
         <Label x:Name ="number_1" 
                Grid.Column="1" 
                Content="1" 

@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Microsoft.EntityFrameworkCore;
 using StudyWithPatron.BLL;
 using StudyWithPatron.DAL;
 namespace StudyWithPatron
@@ -21,9 +22,15 @@ namespace StudyWithPatron
     /// </summary>
     public partial class RatingWindow : Window
     {
+        ApplicationContext db;
         public RatingWindow()
         {
+            db = new ApplicationContext();
             InitializeComponent();
+            db.Database.EnsureCreated();
+            db.UserScore.Load();
+
+            DataContext = db.UserScore.Local.ToObservableCollection();
         }
         private void Exit_Menu_Click(object sender, RoutedEventArgs e)
         {

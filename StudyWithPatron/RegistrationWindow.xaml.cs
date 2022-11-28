@@ -97,5 +97,14 @@ namespace StudyWithPatron
                 sap_win.Show();
             }
         }
+
+        private void EnterClicked(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Return)
+            {
+                Start_Click(sender, e);
+                e.Handled = true;
+            }
+        }
     }
 }

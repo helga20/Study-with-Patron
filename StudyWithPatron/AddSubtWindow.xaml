@@ -673,7 +673,7 @@
                  Grid.Column="2" 
                  Height="80" 
                  Grid.Row="2" 
-                 TextChanged="Result_TextBox_TextChanged"
+                 TextChanged="Result_TextBox_TextChanged" PreviewKeyDown="EnterClicked"
                  >
             <TextBox.InputBindings>
                 <KeyBinding Command="ApplicationCommands.Paste" 

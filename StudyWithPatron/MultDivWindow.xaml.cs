@@ -260,5 +260,14 @@ namespace StudyWithPatron
 
             Close();
         }
+
+        private void EnterClicked(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Return)
+            {
+                Check_Click(sender, e);
+                e.Handled = true;
+            }
+        }
     }
 }

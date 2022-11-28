@@ -11,6 +11,7 @@
         WindowStyle="ToolWindow"
         WindowStartupLocation="CenterScreen"
         Background="#181735">
+    <Canvas  Name="MyCanvas" Focusable="True" MouseLeftButtonDown="PopBalloons">
     <Grid RenderTransformOrigin="0.507,0.513">
         <Grid.RowDefinitions>
             <RowDefinition Height="7.802"/>
@@ -732,7 +733,7 @@
                  Grid.Column="2" 
                  Height="80" 
                  Grid.Row="2" 
-                 TextChanged="Result_TextBox_TextChanged"/>
+                 TextChanged="Result_TextBox_TextChanged" PreviewKeyDown="EnterClicked"/>
         <Label x:Name ="number_1" 
                Grid.Column="1" 
                Content="1" 
@@ -808,5 +809,6 @@
                FontWeight="Black"/>
 
     </Grid>
+    </Canvas>
 </Window>
 
