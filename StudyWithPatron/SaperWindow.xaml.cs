@@ -133,6 +133,15 @@ namespace StudyWithPatron
                     MyCanvas.Children.Remove(activeRec);
                     score2 += 1;
                 }
+                Globals.result_bombs = score2;
+                // Globals.result = counter;
+                //UserScores user_score = new UserScores(Globals.name, Globals.result);
+                //db.UserScore.Add(user_score);
+                //db.SaveChanges();
+
+                Bombs bombs = new Bombs(Globals.result_bombs);
+                db.Bomb.Add(bombs);
+                db.SaveChanges();
             }
         }
 
@@ -153,19 +162,14 @@ namespace StudyWithPatron
             {
                 itemRemover.Add(x);
             }
-
             foreach (Rectangle y in itemRemover)
             {
                 MyCanvas.Children.Remove(y);
             }
-
             itemRemover.Clear();
-
             StartGame();
-
-
-
         }
+
         private void DispatcherTimer_Tick(object sender, EventArgs e)
         {
             MessageBox.Show("Слідкуй за часом");
@@ -180,18 +184,6 @@ namespace StudyWithPatron
             
             NextSol();
         }
-
-        //private void Timer_set()
-        //{
-        //    System.Windows.Threading.DispatcherTimer dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
-        //    dispatcherTimer.Tick += new EventHandler(DispatcherTimer_Tick);
-        //    dispatcherTimer.Interval = new TimeSpan(0, 0, 20);
-        //    dispatcherTimer.Start();
-        //    DateTime startTime;
-        //    startTime = DateTime.Now;
-        //    dispatcherTimer.Tick += (s, ev) => { time_TextBox.Text = String.Format("{0:00}", (DateTime.Now - startTime).Seconds); };
-        //}
-
 
         private void Result_TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -385,12 +377,9 @@ namespace StudyWithPatron
                 db.UserScore.Add(user_score);
                 db.SaveChanges();
 
-                Bombs bombs = new Bombs(Globals.result_bombs);
-                db.Bomb.Add(bombs);
-                db.SaveChanges();
-
-
-
+                //Bombs bombs = new Bombs(Globals.result_bombs);
+                //db.Bomb.Add(bombs);
+                //db.SaveChanges();
 
                 /*
                 string name = nickname_textbox.Text.Trim();
