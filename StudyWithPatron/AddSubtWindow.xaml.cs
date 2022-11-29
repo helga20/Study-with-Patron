@@ -22,15 +22,15 @@ public partial class AddSubtWindow : Window
     {
         if (Globals.Checks_Sound == true)
         {
-            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.clear);
+            SoundPlayer playSound = new (Properties.ResourcesSounds.clear);
             playSound.Play();
         }
 
         result_TextBox.Text = "";
     }
-    public char GetModul()
+    public static char GetModul()
     {
-        Random rnd = new Random();
+        Random rnd = new();
         string chars = "+-";
         int num = rnd.Next(0, 2);
         char modul = chars[num];
@@ -40,13 +40,14 @@ public partial class AddSubtWindow : Window
     private void NextSol()
     {
         result_TextBox.Text = "";
-        Random rnd = new Random();
+        Random rnd = new();
         int a_1 = rnd.Next(1, max);
         int b_1 = rnd.Next(1, max);
         char modul = GetModul();
+        int temp;
         if (a_1 < b_1 && modul == '-')
         {
-            int temp = a_1;
+            temp = a_1;
             a_1 = b_1;
             b_1 = temp;
         }
@@ -58,7 +59,7 @@ public partial class AddSubtWindow : Window
     {
         if (Globals.Checks_Sound == true)
         {
-            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.check);
+            SoundPlayer playSound = new (Properties.ResourcesSounds.check);
             playSound.Play();
         }
 
@@ -83,7 +84,7 @@ public partial class AddSubtWindow : Window
             {
                 if (Globals.Checks_Sound == true)
                 {
-                    SoundPlayer playSound1 = new SoundPlayer(Properties.ResourcesSounds.error);
+                    SoundPlayer playSound1 = new (Properties.ResourcesSounds.error);
                     playSound1.Play();
                 }
 
@@ -104,7 +105,7 @@ public partial class AddSubtWindow : Window
             {
 
                 MessageBox.Show("Вітаю! Ти пройшов урок");
-                MenuWindow menu_win = new MenuWindow();
+                MenuWindow menu_win = new();
                 this.Visibility = Visibility.Hidden;
                 menu_win.Show();
             }
@@ -115,13 +116,14 @@ public partial class AddSubtWindow : Window
     {
         max = 10;
         next_level.Visibility = Visibility.Collapsed;
-        Random rnd = new Random();
+        Random rnd = new ();
         int a = rnd.Next(1, max);
         int b = rnd.Next(1, max);
         char modul = GetModul();
+        int temp;
         if (a < b && modul == '-')
         {
-            int temp = a;
+            temp = a;
             a = b;
             b = temp;
         }
@@ -135,11 +137,11 @@ public partial class AddSubtWindow : Window
     {
         if (Globals.Checks_Sound == true)
         {
-            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.sound1);
+            SoundPlayer playSound = new(Properties.ResourcesSounds.sound1);
             playSound.Play();
         }
 
-        AddSubtWindow add_win = new AddSubtWindow();
+        AddSubtWindow add_win = new();
         this.Visibility = Visibility.Hidden;
         add_win.Show();
     }
@@ -148,11 +150,11 @@ public partial class AddSubtWindow : Window
     {
         if (Globals.Checks_Sound == true)
         {
-            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.back);
+            SoundPlayer playSound = new (Properties.ResourcesSounds.back);
             playSound.Play();
         }
 
-        MenuWindow menu_win = new MenuWindow();
+        MenuWindow menu_win = new ();
         this.Visibility = Visibility.Hidden;
         menu_win.Show();
     }
@@ -161,7 +163,7 @@ public partial class AddSubtWindow : Window
     {
         if (Globals.Checks_Sound == true)
         {
-            SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.close);
+            SoundPlayer playSound = new (Properties.ResourcesSounds.close);
             playSound.Play();
         }
 
@@ -238,7 +240,7 @@ public partial class AddSubtWindow : Window
             {
                 if (Globals.Checks_Sound == true)
                 {
-                    SoundPlayer playSound1 = new SoundPlayer(Properties.ResourcesSounds.error);
+                    SoundPlayer playSound1 = new (Properties.ResourcesSounds.error);
                     playSound1.Play();
                 }
                 MessageBox.Show("Будь ласка, введи число");
@@ -254,6 +256,6 @@ public partial class AddSubtWindow : Window
         {
             Check_Click(sender, e);
             e.Handled = true;
-        }     
+        }
     }
 }

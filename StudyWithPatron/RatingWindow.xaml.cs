@@ -1,7 +1,7 @@
-﻿using System.Media;
-using System.Windows;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using StudyWithPatron.DAL;
+using System.Media;
+using System.Windows;
 
 namespace StudyWithPatron
 {
@@ -10,7 +10,7 @@ namespace StudyWithPatron
     /// </summary>
     public partial class RatingWindow : Window
     {
-        ApplicationContext db = new ApplicationContext();
+        readonly ApplicationContext db = new ();
         public RatingWindow()
         {
             InitializeComponent();
@@ -22,7 +22,7 @@ namespace StudyWithPatron
         {
             if (Globals.Checks_Sound == true)
             {
-                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.close);
+                SoundPlayer playSound = new (Properties.ResourcesSounds.close);
                 playSound.Play();
             }
             Close();
@@ -32,11 +32,11 @@ namespace StudyWithPatron
         {
             if (Globals.Checks_Sound == true)
             {
-                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.back);
+                SoundPlayer playSound = new (Properties.ResourcesSounds.back);
                 playSound.Play();
             }
 
-            RegistrationWindow reg_win = new RegistrationWindow();
+            RegistrationWindow reg_win = new ();
             this.Visibility = Visibility.Hidden;
             reg_win.Show();
         }

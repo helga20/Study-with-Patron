@@ -19,11 +19,11 @@ namespace StudyWithPatron
         {
             if (Globals.Checks_Sound == true)
             {
-                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.sound1);
+                SoundPlayer playSound = new (Properties.ResourcesSounds.sound1);
                 playSound.Play();
             }
 
-            RatingWindow rat_win = new RatingWindow();
+            RatingWindow rat_win = new ();
             this.Visibility = Visibility.Hidden;
             rat_win.Show();
         }
@@ -32,7 +32,7 @@ namespace StudyWithPatron
         {
             if (Globals.Checks_Sound == true)
             {
-                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.close);
+                SoundPlayer playSound = new (Properties.ResourcesSounds.close);
                 playSound.Play();
             }
 
@@ -43,11 +43,11 @@ namespace StudyWithPatron
         {
             if (Globals.Checks_Sound == true)
             {
-                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.back);
+                SoundPlayer playSound = new (Properties.ResourcesSounds.back);
                 playSound.Play();
             }
 
-            MenuWindow menu_win = new MenuWindow();
+            MenuWindow menu_win = new ();
             this.Visibility = Visibility.Hidden;
             menu_win.Show();
         }
@@ -56,7 +56,7 @@ namespace StudyWithPatron
         {
             if (Globals.Checks_Sound == true)
             {
-                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.sound1);
+                SoundPlayer playSound = new (Properties.ResourcesSounds.sound1);
                 playSound.Play();
             }
 
@@ -66,7 +66,7 @@ namespace StudyWithPatron
 
                 if (Globals.Checks_Sound == true)
                 {
-                    SoundPlayer playSound1 = new SoundPlayer(Properties.ResourcesSounds.error);
+                    SoundPlayer playSound1 = new (Properties.ResourcesSounds.error);
                     playSound1.Play();
                 }
 
@@ -74,9 +74,9 @@ namespace StudyWithPatron
             }
             else
             {
-                Globals.name = nickname_textbox.Text.Trim();
+                Globals.Name = nickname_textbox.Text.Trim();
 
-                SaperWindow sap_win = new SaperWindow();
+                SaperWindow sap_win = new ();
                 this.Visibility = Visibility.Hidden;
                 sap_win.Show();
             }

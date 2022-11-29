@@ -1,6 +1,9 @@
-﻿using System;
+﻿using StudyWithPatron.BLL;
+using StudyWithPatron.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -8,9 +11,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
-using StudyWithPatron.BLL;
-using StudyWithPatron.DAL;
-using System.Media;
 
 namespace StudyWithPatron
 {
@@ -19,16 +19,14 @@ namespace StudyWithPatron
     /// </summary>
     public partial class SaperWindow : Window
     {
-        ApplicationContext db;
-
-        DispatcherTimer timer = new DispatcherTimer();
+        readonly ApplicationContext db;
+        readonly DispatcherTimer timer = new ();
         private int i = 11;
-
-        DispatcherTimer gameTimer = new DispatcherTimer();
+        readonly DispatcherTimer gameTimer = new ();
         int speed = 5;
         int intervals = 90;
-        Random rand = new Random();
-        List<Rectangle> itemRemover = new List<Rectangle>();
+        readonly Random rand = new ();
+        readonly List<Rectangle> itemRemover = new();
         int bombs;
         int j;
         int missedBombs;
@@ -40,7 +38,7 @@ namespace StudyWithPatron
             db = new ApplicationContext();
 
             timer.Interval = TimeSpan.FromSeconds(1);
-            timer.Tick += timer_Tick;
+            timer.Tick += Timer_Tick;
             gameTimer.Tick += GameEngine;
             gameTimer.Interval = TimeSpan.FromMilliseconds(200);
         }
@@ -52,7 +50,7 @@ namespace StudyWithPatron
             intervals -= 10;
             if (intervals < 1)
             {
-                ImageBrush bombImage = new ImageBrush();
+                ImageBrush bombImage = new ();
                 bombs += 1;
                 if (bombs > 1)
                 {
@@ -65,7 +63,7 @@ namespace StudyWithPatron
                         break;
                 }
 
-                Rectangle newBomb = new Rectangle
+                Rectangle newBomb = new()
                 {
                     Tag = "bomb",
                     Height = 100,
@@ -105,7 +103,6 @@ namespace StudyWithPatron
 
                 RestartGame();
             }
-           
         }
 
         private void PopBalloons(object sender, MouseButtonEventArgs e)
@@ -157,7 +154,7 @@ namespace StudyWithPatron
                 counter = 0;
             }
             score.Content = "Рахунок - " + counter;
-            
+
             NextSol();
         }
 
@@ -180,7 +177,7 @@ namespace StudyWithPatron
         {
             if (Globals.Checks_Sound == true)
             {
-                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.clear);
+                SoundPlayer playSound = new (Properties.ResourcesSounds.clear);
                 playSound.Play();
             }
             result_TextBox.Text = "";
@@ -246,15 +243,15 @@ namespace StudyWithPatron
             result_TextBox.Text = temp + "0";
         }
 
-        public char GetModul()
+        public static char GetModul()
         {
-            Random rnd = new Random();
+            Random rnd = new ();
             string chars = "+/-*";
             int num = rnd.Next(0, 4);
             char modul = chars[num];
             return modul;
         }
-        void timer_Tick(object sender, EventArgs e)
+        void Timer_Tick(object sender, EventArgs e)
         {
             i--;
             timer_time.Content = i.ToString();
@@ -262,7 +259,7 @@ namespace StudyWithPatron
             {
                 if (Globals.Checks_Sound == true)
                 {
-                    SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.error);
+                    SoundPlayer playSound = new (Properties.ResourcesSounds.error);
                     playSound.Play();
                 }
 
@@ -276,7 +273,7 @@ namespace StudyWithPatron
         {
             if (Globals.Checks_Sound == true)
             {
-                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.sound1);
+                SoundPlayer playSound = new (Properties.ResourcesSounds.sound1);
                 playSound.Play();
             }
             RestartGame();
@@ -284,13 +281,14 @@ namespace StudyWithPatron
 
             start.Visibility = Visibility.Collapsed;
             max = 10;
-            Random rnd = new Random();
+            Random rnd = new ();
             int a = rnd.Next(1, max);
             int b = rnd.Next(1, max);
             char modul = GetModul();
+            int temp;
             if (a < b && modul == '-')
             {
-                int temp = a;
+                temp = a;
                 a = b;
                 b = temp;
             }
@@ -303,13 +301,14 @@ namespace StudyWithPatron
         private void NextSol()
         {
             result_TextBox.Text = "";
-            Random rnd = new Random();
+            Random rnd = new ();
             int a_1 = rnd.Next(1, max);
             int b_1 = rnd.Next(1, max);
             char modul = GetModul();
+            int temp;
             if (a_1 < b_1 && modul == '-')
             {
-                int temp = a_1;
+                temp = a_1;
                 a_1 = b_1;
                 b_1 = temp;
             }
@@ -319,7 +318,7 @@ namespace StudyWithPatron
             }
             number_1.Content = a_1.ToString();
             number_2.Content = b_1.ToString();
-            modul_.Content = modul.ToString();         
+            modul_.Content = modul.ToString();
         }
 
         private void Check_Hearts()
@@ -344,16 +343,16 @@ namespace StudyWithPatron
 
                 if (Globals.Checks_Sound == true)
                 {
-                    SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.gameover);
+                    SoundPlayer playSound = new (Properties.ResourcesSounds.gameover);
                     playSound.Play();
                 }
 
                 MessageBox.Show("Не залишилося спроб. Гра завершена");
-                UserScores user_score = new UserScores(Globals.name, Globals.result);
+                UserScores user_score = new (Globals.Name, Globals.Result);
                 db.UserScore.Add(user_score);
                 db.SaveChanges();
 
-                MenuWindow m_win = new MenuWindow();
+                MenuWindow m_win = new ();
                 this.Visibility = Visibility.Hidden;
                 m_win.Show();
             }
@@ -362,10 +361,10 @@ namespace StudyWithPatron
         private void Check_Click(object sender, RoutedEventArgs e)
         {
             int total_score = counter + score2;
-            
+
             if (Globals.Checks_Sound == true)
             {
-                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.check);
+                SoundPlayer playSound = new (Properties.ResourcesSounds.check);
                 playSound.Play();
             }
 
@@ -385,7 +384,7 @@ namespace StudyWithPatron
                 if (res == a + b || res == a - b || res == a / b || res == a * b)
                 {
                     NextSol();
-                    
+
                     counter++;
                     score.Content = "Рахунок - " + total_score;
                 }
@@ -393,7 +392,7 @@ namespace StudyWithPatron
                 {
                     if (Globals.Checks_Sound == true)
                     {
-                        SoundPlayer playSound1 = new SoundPlayer(Properties.ResourcesSounds.error);
+                        SoundPlayer playSound1 = new (Properties.ResourcesSounds.error);
                         playSound1.Play();
                     }
 
@@ -420,19 +419,19 @@ namespace StudyWithPatron
                     max = 130;
                 }
             }
-            Globals.result = total_score;
-            
+            Globals.Result = total_score;
+
         }
-                      
+
         private void Back_Menu_Click(object sender, RoutedEventArgs e)
         {
             if (Globals.Checks_Sound == true)
             {
-                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.back);
+                SoundPlayer playSound = new (Properties.ResourcesSounds.back);
                 playSound.Play();
             }
 
-            RegistrationWindow reg_win = new RegistrationWindow();
+            RegistrationWindow reg_win = new ();
             this.Visibility = Visibility.Hidden;
             reg_win.Show();
             db.SaveChanges();
@@ -442,7 +441,7 @@ namespace StudyWithPatron
         {
             if (Globals.Checks_Sound == true)
             {
-                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.close);
+                SoundPlayer playSound = new (Properties.ResourcesSounds.close);
                 playSound.Play();
             }
 

@@ -1,16 +1,6 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
-using System.Linq;
-using System.IO;
-using System.Data;
-using System.Data.Common;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
-using System.Runtime.InteropServices;
-using System.Runtime.Serialization.Formatters;
-using Microsoft.Data.Sqlite;
+﻿using Microsoft.Data.Sqlite;
 using StudyWithPatronConsole.Properties;
+using System.Text;
 //using Study.Properties;
 
 namespace StudyWithPatron
@@ -68,8 +58,8 @@ namespace StudyWithPatron
         static string CreateUser(int length)
         {
             const string valid = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-            StringBuilder res = new StringBuilder();
-            Random rnd = new Random();
+            StringBuilder res = new ();
+            Random rnd = new ();
             while (0 < length--)
             {
                 res.Append(valid[rnd.Next(valid.Length)]);
@@ -88,7 +78,7 @@ namespace StudyWithPatron
 
             SqliteCommand sqlitecom;
             sqlitecom = sqcon.CreateCommand();
-            Random rnd = new Random();
+            Random rnd = new ();
             int user_res = rnd.Next(1, 100);
             int bomb_score = rnd.Next(1, 100);
             int id = rnd.Next(1, 10000);

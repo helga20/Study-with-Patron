@@ -1,32 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Source\\Repos\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj": {}
+    "C:\\Users\\Lenovo\\source\\repos\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Source\\Repos\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj": {
+    "C:\\Users\\Lenovo\\source\\repos\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj",
         "projectName": "StudyWithPatron",
-        "projectPath": "C:\\Users\\Admin\\Source\\Repos\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Source\\Repos\\Study-with-Patron\\StudyWithPatron\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo\\source\\repos\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\source\\repos\\Study-with-Patron\\StudyWithPatron\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

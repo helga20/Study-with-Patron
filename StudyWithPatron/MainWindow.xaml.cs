@@ -1,13 +1,17 @@
-﻿using System.Windows;
-using System.Media;
+﻿using System.Media;
+using System.Windows;
 
 namespace StudyWithPatron
 {
     public static class Globals
     {
-        public static bool Checks_Sound;
-        public static string? name;
-        public static int result;
+        private static bool checks_Sound;
+        private static string? name;
+        private static int result;
+
+        public static bool Checks_Sound { get => checks_Sound; set => checks_Sound = value; }
+        public static string? Name { get => name; set => name = value; }
+        public static int Result { get => result; set => result = value; }
     }
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -26,20 +30,20 @@ namespace StudyWithPatron
         {
             if (Globals.Checks_Sound == true)
             {
-                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.sound1);
+                SoundPlayer playSound = new (Properties.ResourcesSounds.sound1);
                 playSound.Play();
             }
 
-            MenuWindow menu_win = new MenuWindow();
+            MenuWindow menu_win = new ();
             this.Visibility = Visibility.Hidden;
             menu_win.Show();
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
-            if(Globals.Checks_Sound == true)
+            if (Globals.Checks_Sound == true)
             {
-                SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.close);
+                SoundPlayer playSound = new (Properties.ResourcesSounds.close);
                 playSound.Play();
             }
             Close();

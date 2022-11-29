@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using System.IO;
+﻿using Microsoft.EntityFrameworkCore;
 using StudyWithPatron.BLL;
+using System;
+using System.IO;
 
 namespace StudyWithPatron.DAL
 {
@@ -15,14 +11,10 @@ namespace StudyWithPatron.DAL
         //CREATE TABLE IF NOT EXISTS Bombs (Id INTEGER PRIMARY KEY NOT NULL, score INTEGER NOT NULL, FOREIGN KEY (Id) REFERENCES UserScores (Id) ON DELETE CASCADE);
 
         public DbSet<UserScores> UserScore { get; set; }
-        
+
         public DbSet<Bombs> Bomb { get; set; }
 
-        // string path = Path.Combine(Environment.CurrentDirectory, @"DAL", "RatingDB.db");
-
-        //public string path = @"C:\Users\Lenovo\Source\Repos\helga20\Study-with-Patron\StudyWithPatron\DAL\UserScoresDB.db";
-        //string path = Path.Combine(Environment.CurrentDirectory, @"DAL", "UserScoresDB.db");
-        string path = Path.Combine(Environment.CurrentDirectory, @"DAL", "UserScoresDB.db");
+        public string path = Path.Combine(Environment.CurrentDirectory, @"DAL", "UserScoresDB.db");
 
         protected override void OnConfiguring(DbContextOptionsBuilder options) => options.UseSqlite($"Data Source={path}");
 
