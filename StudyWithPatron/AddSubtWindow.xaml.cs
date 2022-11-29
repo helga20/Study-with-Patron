@@ -118,7 +118,6 @@ public partial class AddSubtWindow : Window
                 MenuWindow menu_win = new MenuWindow();
                 this.Visibility = Visibility.Hidden;
                 menu_win.Show();
-
             }
         }
     }
@@ -253,7 +252,6 @@ public partial class AddSubtWindow : Window
                     SoundPlayer playSound1 = new SoundPlayer(Properties.ResourcesSounds.error);
                     playSound1.Play();
                 }
-
                 MessageBox.Show("Будь ласка, введи число");
                 result_TextBox.Text = "";
                 return;
@@ -263,11 +261,10 @@ public partial class AddSubtWindow : Window
 
     private void EnterClicked(object sender, KeyEventArgs e)
     {
-            if (e.Key == Key.Return)
-            {
-                Check_Click(sender, e);
-                e.Handled = true;
-            }
-        
+        if (e.Key == Key.Return)
+        {
+            Check_Click(sender, e);
+            e.Handled = true;
+        }     
     }
 }

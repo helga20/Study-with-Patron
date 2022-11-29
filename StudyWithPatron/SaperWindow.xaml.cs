@@ -133,13 +133,6 @@ namespace StudyWithPatron
                     MyCanvas.Children.Remove(activeRec);
                     score2 += 1;
                 }
-
-                Globals.result_bombs = score2;
-                // Globals.result = counter;
-
-               // Bombs bombs = new Bombs(Globals.result_bombs);
-                //db.Bomb.Add(bombs);
-                //db.SaveChanges();
             }
         }
 
@@ -205,7 +198,6 @@ namespace StudyWithPatron
                 SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.clear);
                 playSound.Play();
             }
-
             result_TextBox.Text = "";
         }
 
@@ -293,7 +285,6 @@ namespace StudyWithPatron
                 timer.Stop();
                 Check_Hearts();
             }
-
         }
 
         private void Start_Click(object sender, RoutedEventArgs e)
@@ -323,7 +314,6 @@ namespace StudyWithPatron
             modul_.Content = modul.ToString();
             number_2.Content = b.ToString();
             eq.Content = "=";
-
         }
         private void NextSol()
         {
@@ -344,8 +334,7 @@ namespace StudyWithPatron
             }
             number_1.Content = a_1.ToString();
             number_2.Content = b_1.ToString();
-            modul_.Content = modul.ToString();
-            
+            modul_.Content = modul.ToString();         
         }
 
         private void Check_Hearts()
@@ -378,28 +367,6 @@ namespace StudyWithPatron
                 UserScores user_score = new UserScores(Globals.name, Globals.result);
                 db.UserScore.Add(user_score);
                 db.SaveChanges();
-                
-                ////Globals.result = counter;
-                ////UserScores user_score = new UserScores(Globals.name, Globals.result);
-                ////db.UserScore.Add(user_score);
-                ////db.SaveChanges();
-
-                //Bombs bombs = new Bombs(Globals.result_bombs);
-                //db.Bomb.Add(bombs);
-                //db.SaveChanges();
-
-                /*
-                string name = nickname_textbox.Text.Trim();
-                int result = 0;
-                UserScores user_score = new UserScores(name, result);
-                db.UserScore.Add(user_score);
-                db.SaveChanges();
-
-                int result2 = 0;
-                Bombs bombs = new Bombs(result2);
-                db.Bomb.Add(bombs);
-                db.SaveChanges();
-                */
 
                 MenuWindow m_win = new MenuWindow();
                 this.Visibility = Visibility.Hidden;
@@ -454,7 +421,6 @@ namespace StudyWithPatron
                     }
                     score.Content = "Рахунок - " + total_score;
                     NextSol();
-
                 }
                 if (counter >= 15)
                 {
@@ -472,8 +438,7 @@ namespace StudyWithPatron
             Globals.result = total_score;
             
         }
-        
-                
+                      
         private void Back_Menu_Click(object sender, RoutedEventArgs e)
         {
             if (Globals.Checks_Sound == true)

@@ -22,9 +22,7 @@ namespace StudyWithPatron
     {
         public static bool Checks_Sound;
         public static string? name;
-        public static int  result;
-        public static int result_bombs;
-        //public static int id_score;
+        public static int result;
     }
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -46,7 +44,6 @@ namespace StudyWithPatron
                 SoundPlayer playSound = new SoundPlayer(Properties.ResourcesSounds.sound1);
                 playSound.Play();
             }
-
 
             MenuWindow menu_win = new MenuWindow();
             this.Visibility = Visibility.Hidden;
@@ -74,6 +71,5 @@ namespace StudyWithPatron
                 Globals.Checks_Sound = true;
             }
         }
-
     }
 }

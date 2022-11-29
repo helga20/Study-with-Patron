@@ -26,12 +26,9 @@ namespace StudyWithPatron
     /// </summary>
     public partial class RegistrationWindow : Window
     {
-        //ApplicationContext db;
         public RegistrationWindow()
         {
             InitializeComponent();
-
-           // db = new ApplicationContext();
         }
         private void Rating_Click(object sender, RoutedEventArgs e)
         {
@@ -93,13 +90,6 @@ namespace StudyWithPatron
             else
             {
                 Globals.name = nickname_textbox.Text.Trim();
-                //UserScores user_score = new UserScores(Globals.name, Globals.result);
-                //db.UserScore.Add(user_score);
-                //db.SaveChanges();
-
-                //Bombs bombs = new Bombs(Globals.result_bombs);
-                //db.Bomb.Add(bombs);
-                //db.SaveChanges();
 
                 SaperWindow sap_win = new SaperWindow();
                 this.Visibility = Visibility.Hidden;

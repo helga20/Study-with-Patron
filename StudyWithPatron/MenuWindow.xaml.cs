@@ -34,7 +34,6 @@ namespace StudyWithPatron
                 playSound.Play();
             }
 
-
             AddSubtWindow add_sub_win = new AddSubtWindow();
             this.Visibility = Visibility.Hidden;
             add_sub_win.Show();
