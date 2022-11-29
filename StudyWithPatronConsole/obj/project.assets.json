@@ -335,11 +335,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\Study-with-Patron\\StudyWithPatronConsole\\StudyWithPatronConsole.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\helga20\\Study-with-Patron\\StudyWithPatronConsole\\StudyWithPatronConsole.csproj",
       "projectName": "StudyWithPatronConsole",
-      "projectPath": "C:\\Users\\Lenovo\\source\\repos\\Study-with-Patron\\StudyWithPatronConsole\\StudyWithPatronConsole.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\source\\repos\\helga20\\Study-with-Patron\\StudyWithPatronConsole\\StudyWithPatronConsole.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\source\\repos\\Study-with-Patron\\StudyWithPatronConsole\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\source\\repos\\helga20\\Study-with-Patron\\StudyWithPatronConsole\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

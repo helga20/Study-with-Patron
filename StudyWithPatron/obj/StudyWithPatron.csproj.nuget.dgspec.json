@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\source\\repos\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj": {}
+    "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\source\\repos\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj": {
+    "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\source\\repos\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj",
         "projectName": "StudyWithPatron",
-        "projectPath": "C:\\Users\\Lenovo\\source\\repos\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\StudyWithPatron\\StudyWithPatron.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\source\\repos\\Study-with-Patron\\StudyWithPatron\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\source\\repos\\helga20\\Study-with-Patron\\StudyWithPatron\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

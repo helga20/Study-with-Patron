@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1bbOXzs/pU+WsVCCkHoTImJITKsOPE8YpHLrTYteCCMTNc6XgSzQs4Y5GSLVFGLsQR7UhShDBTHSSIguB6GZbw==",
+  "dgSpecHash": "gfrMksAAfUGPk3L7CX3BUVcmFQfLL1ok8EIciCWl6AKBlL3eg0g5+wD2iijv4J0yN+0Jxq0/lTEYuUVP2XT+KA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\source\\repos\\Study-with-Patron\\StudyWithPatronConsole\\StudyWithPatronConsole.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Source\\Repos\\helga20\\Study-with-Patron\\StudyWithPatronConsole\\StudyWithPatronConsole.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.data.sqlite\\7.0.0\\microsoft.data.sqlite.7.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.0\\microsoft.data.sqlite.core.7.0.0.nupkg.sha512",
