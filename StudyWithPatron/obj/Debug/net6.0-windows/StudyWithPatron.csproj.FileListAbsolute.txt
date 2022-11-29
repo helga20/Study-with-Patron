@@ -742,3 +742,4 @@ E:\WPF_PATRON_sounds\StudyWithPatron\obj\Debug\net6.0-windows\StudyWithPatron.pd
 E:\WPF_PATRON_sounds\StudyWithPatron\obj\Debug\net6.0-windows\StudyWithPatron.genruntimeconfig.cache
 E:\WPF_PATRON_sounds\StudyWithPatron\obj\Debug\net6.0-windows\ref\StudyWithPatron.dll
 C:\Users\Admin\Source\Repos\Study-with-Patron\StudyWithPatron\bin\Debug\net6.0-windows\Images\Bomb.png
+C:\Users\Admin\Source\Repos\Study-with-Patron\StudyWithPatron\bin\Debug\net6.0-windows\DAL\UserScoresDB.db

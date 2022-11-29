@@ -29,10 +29,9 @@ namespace StudyWithPatron
         int intervals = 90;
         Random rand = new Random();
         List<Rectangle> itemRemover = new List<Rectangle>();
-        ImageBrush backgroundImage = new ImageBrush();
-        int balloonSkins;
+        int bombs;
         int j;
-        int missedBalloons;
+        int missedBombs;
         bool gameIsActive;
         int score2;
         public SaperWindow()
@@ -47,47 +46,42 @@ namespace StudyWithPatron
         }
         int counter = 0;
         int max = 0;
+
         private void GameEngine(object sender, EventArgs e)
         {
             intervals -= 10;
-
             if (intervals < 1)
             {
-                ImageBrush balloonImage = new ImageBrush();
-
-                balloonSkins += 1;
-
-                if (balloonSkins > 5)
+                ImageBrush bombImage = new ImageBrush();
+                bombs += 1;
+                if (bombs > 1)
                 {
-                    balloonSkins = 1;
+                    bombs = 1;
                 }
-
-                switch (balloonSkins)
+                switch (bombs)
                 {
                     case 1:
-                        balloonImage.ImageSource = new BitmapImage(new Uri(@"../net6.0-windows/Images/Bomb.png", UriKind.Relative));
+                        bombImage.ImageSource = new BitmapImage(new Uri(@"../net6.0-windows/Images/Bomb.png", UriKind.Relative));
                         break;
                 }
 
-                Rectangle newBalloon = new Rectangle
+                Rectangle newBomb = new Rectangle
                 {
-                    Tag = "balloon",
+                    Tag = "bomb",
                     Height = 100,
                     Width = 100,
-                    Fill = balloonImage
+                    Fill = bombImage
                 };
 
-                Canvas.SetLeft(newBalloon, rand.Next(50, 400));
-                Canvas.SetTop(newBalloon, 600);
-
-                MyCanvas.Children.Add(newBalloon);
-
+                Canvas.SetLeft(newBomb, rand.Next(50, 400));
+                Canvas.SetTop(newBomb, 600);
+                MyCanvas.Children.Add(newBomb);
                 intervals = rand.Next(90, 150);
             }
 
             foreach (var x in MyCanvas.Children.OfType<Rectangle>())
             {
-                if ((string)x.Tag == "balloon")
+                if ((string)x.Tag == "bomb")
                 {
                     j = rand.Next(-5, 5);
                     Canvas.SetTop(x, Canvas.GetTop(x) - speed);
@@ -97,25 +91,21 @@ namespace StudyWithPatron
                 if (Canvas.GetTop(x) < 20)
                 {
                     itemRemover.Add(x);
-
-                    missedBalloons += 1;
+                    missedBombs += 1;
                 }
             }
             foreach (Rectangle y in itemRemover)
             {
                 MyCanvas.Children.Remove(y);
             }
-            if (missedBalloons > 10)
+            if (missedBombs > 10)
             {
                 gameIsActive = false;
                 gameTimer.Stop();
 
                 RestartGame();
             }
-            if (score2 > 3)
-            {
-                speed = 7;
-            }
+           
         }
 
         private void PopBalloons(object sender, MouseButtonEventArgs e)
@@ -135,7 +125,7 @@ namespace StudyWithPatron
         {
             gameTimer.Start();
 
-            missedBalloons = 0;
+            missedBombs = 0;
             score2 = 0;
             intervals = 7;
             gameIsActive = true;
