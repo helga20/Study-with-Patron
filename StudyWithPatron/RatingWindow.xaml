@@ -50,7 +50,7 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                       
+
                         <TextBlock Text="{Binding name}"  
                                    FontSize="16" 
                                    Foreground="White" 
@@ -139,7 +139,5 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-
-
     </Grid>
 </Window>

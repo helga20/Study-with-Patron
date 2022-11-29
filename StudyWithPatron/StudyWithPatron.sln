@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudyWithPatron", "StudyWithPatron.csproj", "{6A0C5A0D-B1A3-4432-8746-90D88372E7C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyWithPatronConsole", "..\StudyWithPatronConsole\StudyWithPatronConsole.csproj", "{1EC4F5AF-B68E-4514-B2E3-F4B08A3DDF1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudyWithPatronConsole", "..\StudyWithPatronConsole\StudyWithPatronConsole.csproj", "{1EC4F5AF-B68E-4514-B2E3-F4B08A3DDF1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
